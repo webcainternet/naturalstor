@@ -1,0 +1,1 @@
+2014-07-17 7:30:26 - PHP Notice:  Undefined variable: text_yt in C:\wamp\www\442\catalog\view\theme\theme442\template\common\footer.tpl on line 81

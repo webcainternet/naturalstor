@@ -1,0 +1,42 @@
+
+header #logo a img, .camera_caption, .banner img {
+	width:auto;
+	}
+#cboxLoadingGraphic, #cboxLoadingOverlay {display:none !important;}
+/*---------------------------*/
+div.sort {
+	width:220px;
+	}
+div.limit {
+	width:140px;
+	}
+html[lang="de"] div.sort {
+	width:280px;
+	}
+html[lang="de"] div.limit {
+	width:150px;
+	}
+html[lang="es"] div.sort {
+	width:255px;
+	}
+html[lang="es"] div.limit {
+	width:155px;
+	}
+
+.product-info .cart-top-padd label{
+	min-width:67px;
+	}
+html[lang="de"] .product-info .cart-top-padd label{
+	min-width:90px;
+	}
+html[lang="es"] .product-info .cart-top-padd label{
+	min-width:107px;
+	}
+/**-----------------------------------------**/
+
+#search input {
+	max-width:none;
+	width:109px;
+	outline:none;
+	}
+.product-info .image {margin-bottom:20px;}
