@@ -1,1 +1,30 @@
 2014-07-17 7:30:26 - PHP Notice:  Undefined variable: text_yt in C:\wamp\www\442\catalog\view\theme\theme442\template\common\footer.tpl on line 81
+2015-02-26 2:17:50 - Couldn't resolve host 'ws.correios.com.br'
+2015-02-26 2:17:50 - Não foi possível estabelecer conexão com os Correios. Tentando reconectar...
+2015-02-26 2:17:50 - Couldn't resolve host 'ws.correios.com.br'
+2015-02-26 2:17:50 - Falha na tentativa de reconectar com os Correios. O WebService dos Correios apresenta instabilidade ou está fora do ar.
+2015-02-26 2:17:50 - Couldn't resolve host 'ws.correios.com.br'
+2015-02-26 2:17:50 - Não foi possível estabelecer conexão com os Correios. Tentando reconectar...
+2015-02-26 2:17:50 - Couldn't resolve host 'ws.correios.com.br'
+2015-02-26 2:17:50 - Falha na tentativa de reconectar com os Correios. O WebService dos Correios apresenta instabilidade ou está fora do ar.
+2015-02-26 2:17:50 - Couldn't resolve host 'ws.correios.com.br'
+2015-02-26 2:17:50 - Não foi possível estabelecer conexão com os Correios. Tentando reconectar...
+2015-02-26 2:17:50 - Couldn't resolve host 'ws.correios.com.br'
+2015-02-26 2:17:50 - Falha na tentativa de reconectar com os Correios. O WebService dos Correios apresenta instabilidade ou está fora do ar.
+2015-02-26 2:18:26 - Couldn't resolve host 'ws.correios.com.br'
+2015-02-26 2:18:26 - Não foi possível estabelecer conexão com os Correios. Tentando reconectar...
+2015-02-26 2:18:26 - Couldn't resolve host 'ws.correios.com.br'
+2015-02-26 2:18:26 - Falha na tentativa de reconectar com os Correios. O WebService dos Correios apresenta instabilidade ou está fora do ar.
+2015-02-26 2:18:26 - Couldn't resolve host 'ws.correios.com.br'
+2015-02-26 2:18:26 - Não foi possível estabelecer conexão com os Correios. Tentando reconectar...
+2015-02-26 2:18:26 - Couldn't resolve host 'ws.correios.com.br'
+2015-02-26 2:18:26 - Falha na tentativa de reconectar com os Correios. O WebService dos Correios apresenta instabilidade ou está fora do ar.
+2015-02-26 2:18:26 - Couldn't resolve host 'ws.correios.com.br'
+2015-02-26 2:18:26 - Não foi possível estabelecer conexão com os Correios. Tentando reconectar...
+2015-02-26 2:18:26 - Couldn't resolve host 'ws.correios.com.br'
+2015-02-26 2:18:26 - Falha na tentativa de reconectar com os Correios. O WebService dos Correios apresenta instabilidade ou está fora do ar.
+2015-02-26 2:19:10 - PHP Notice:  Undefined variable: cartoes in /Users/fernandomendes/github/naturalstor/public/catalog/model/payment/cielo.php on line 45
+2015-02-26 2:19:10 - PHP Warning:  implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed in /Users/fernandomendes/github/naturalstor/public/catalog/model/payment/cielo.php on line 45
+2015-02-26 2:19:10 - PHP Notice:  Undefined variable: codigo_cartoes in /Users/fernandomendes/github/naturalstor/public/catalog/model/payment/cielo.php on line 49
+2015-02-26 2:19:10 - PHP Warning:  Invalid argument supplied for foreach() in /Users/fernandomendes/github/naturalstor/public/catalog/model/payment/cielo.php on line 49
+2015-02-26 2:20:16 - PagSeguro: [HTTP 401] - UNAUTHORIZED 

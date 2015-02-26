@@ -113,6 +113,20 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 });
 //--></script>
 <?php } ?>
+
+
+<!-- Facebook Like box -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=805023986191114&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- FIM Facebook Like box -->
+
+
 <?php echo $google_analytics; ?>
 </head>
 <body class="<?php echo empty($this->request->get['route']) ? 'common-home' : str_replace('/', '-', $this->request->get['route']); ?>"><a id="hidden" href="<?php echo $base; ?>"></a>
@@ -200,7 +214,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 					<div class="col-sm-12">
 						<!-- Logo -->
 						<?php if ($logo) { ?>
-							<div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
+							<div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" style="z-index: 1000; position: relative;" /></a></div>
 						<?php } ?>	
 						
 						<div class="cart-position">

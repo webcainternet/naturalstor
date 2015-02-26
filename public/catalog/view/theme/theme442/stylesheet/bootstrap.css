@@ -424,7 +424,7 @@ h1,
 .h1 {
 	font-size: 24px;
 	line-height: 29px; 
-	color:#60bb44;
+	color:#16300a;
 	font-weight:normal;
 	margin-bottom:30px;
 }
@@ -432,7 +432,7 @@ h2,
 .h2 {
 	font-size: 20px;
 	line-height: 24px; 
-	color:#60bb44;
+	color:#16300a;
 	font-weight:normal;
 	margin-bottom:25px;
 }
@@ -952,7 +952,7 @@ pre code {
     width: 33.33333333333333%;
   }
   .col-sm-3 {
-    width: 25%;
+    width: 16%;
   }
   .col-sm-2 {
     width: 16.666666666666664%;

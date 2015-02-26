@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Feb 20, 2015 at 06:40 PM
+-- Generation Time: Feb 26, 2015 at 08:37 AM
 -- Server version: 5.5.38
 -- PHP Version: 5.3.29
 
@@ -40,7 +40,7 @@ CREATE TABLE `oc_address` (
   `postcode` varchar(10) NOT NULL,
   `country_id` int(11) NOT NULL DEFAULT '0',
   `zone_id` int(11) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_address`
@@ -48,7 +48,8 @@ CREATE TABLE `oc_address` (
 
 INSERT INTO `oc_address` (`address_id`, `customer_id`, `firstname`, `lastname`, `company`, `company_id`, `tax_id`, `address_1`, `address_2`, `city`, `postcode`, `country_id`, `zone_id`) VALUES
 (1, 1, 'Demo', 'Demo', '', '', '', 'Demo', '', 'Demo', '5555', 222, 3530),
-(2, 2, 'admin', 'admin', '', '', '', '111', '111', '111', '111', 222, 3515);
+(2, 2, 'admin', 'admin', '', '', '', '111', '111', '111', '111', 222, 3515),
+(3, 3, 'Fernando', 'Mendes', '', '', '', 'Lomas Valentinas, 241', '', 'São Caetano do Sul', '09560260', 30, 464);
 
 -- --------------------------------------------------------
 
@@ -303,32 +304,30 @@ CREATE TABLE `oc_category` (
   `status` tinyint(1) NOT NULL,
   `date_added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `date_modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=MyISAM AUTO_INCREMENT=81 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=98 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_category`
 --
 
 INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `date_added`, `date_modified`) VALUES
-(25, 'data/Fly HUMMER HT2 1 copy.png', 0, 1, 1, 5, 1, '2009-01-31 01:04:25', '2014-07-17 17:03:35'),
-(20, 'data/Anycool T818  1 copy.png', 0, 1, 1, 2, 1, '2009-01-05 21:49:43', '2014-07-17 17:01:59'),
-(24, 'data/FLY E176 1 copy.png', 0, 1, 1, 4, 1, '2009-01-20 02:36:26', '2014-07-17 17:03:11'),
-(17, 'data/FLY E146 1 copy.png', 0, 1, 1, 3, 1, '2009-01-03 21:08:57', '2014-07-17 17:00:06'),
-(28, 'data/Homeolab-USA2.png', 17, 1, 1, 3, 1, '2009-02-02 13:11:12', '2014-07-18 15:13:01'),
-(30, 'data/Sarna-Sensitive2.png', 17, 1, 1, 1, 1, '2009-02-02 13:11:59', '2014-07-18 15:13:55'),
-(35, 'data/Nutrition-Now1.png', 17, 1, 1, 5, 1, '2010-09-17 10:06:48', '2014-07-18 15:13:18'),
-(36, 'data/Prilosec-OTC2.png', 17, 1, 1, 4, 1, '2010-09-17 10:07:13', '2014-07-18 15:13:37'),
-(57, 'data/FLY E145 1 copy.png', 0, 1, 1, 1, 1, '2011-04-26 08:53:16', '2014-07-17 16:58:58'),
-(59, 'data/HTC Desire 1 copy.png', 0, 1, 1, 6, 1, '2012-12-04 17:18:18', '2014-07-17 17:03:55'),
-(71, 'data/10-2.jpg', 0, 1, 1, 7, 1, '2014-07-07 16:56:04', '2014-07-17 17:04:17'),
-(72, 'data/Accuflora-Advanced2.png', 17, 1, 1, 2, 1, '2014-07-07 16:56:21', '2014-07-18 15:09:47'),
-(73, 'data/Align-Digestive3.png', 72, 1, 1, 3, 1, '2014-07-07 16:56:54', '2014-07-18 15:10:05'),
-(75, '', 0, 1, 1, 8, 1, '2014-07-17 17:04:48', '2014-07-17 17:09:23'),
-(76, '', 0, 1, 1, 9, 1, '2014-07-17 17:05:14', '2014-07-17 17:09:40'),
-(77, '', 0, 1, 1, 10, 1, '2014-07-17 17:05:34', '2014-07-17 17:09:57'),
-(78, '', 0, 1, 1, 11, 1, '2014-07-17 17:05:59', '2014-07-17 17:10:26'),
-(79, 'data/Baye-Low-Dose3.png', 72, 0, 1, 0, 1, '2014-07-17 17:15:50', '2014-07-18 15:12:34'),
-(80, 'data/Band-Aid2.png', 72, 0, 1, 0, 1, '2014-07-17 17:16:27', '2014-07-18 15:11:15');
+(92, '', 0, 1, 1, 1300, 1, '2015-02-26 02:10:08', '2015-02-26 02:10:08'),
+(93, '', 0, 1, 1, 1300, 1, '2015-02-26 02:10:34', '2015-02-26 02:10:34'),
+(94, '', 0, 1, 1, 1400, 1, '2015-02-26 02:10:54', '2015-02-26 02:10:54'),
+(95, '', 0, 1, 1, 1500, 1, '2015-02-26 02:11:25', '2015-02-26 02:11:25'),
+(96, '', 0, 1, 1, 1600, 1, '2015-02-26 02:11:45', '2015-02-26 02:11:45'),
+(97, '', 81, 1, 1, 110, 1, '2015-02-26 02:12:51', '2015-02-26 02:12:51'),
+(91, '', 0, 1, 1, 1200, 1, '2015-02-26 02:09:44', '2015-02-26 02:09:44'),
+(87, '', 0, 1, 1, 700, 1, '2015-02-26 02:06:30', '2015-02-26 02:06:30'),
+(88, '', 0, 1, 1, 900, 1, '2015-02-26 02:08:04', '2015-02-26 02:08:04'),
+(89, '', 0, 1, 1, 1000, 1, '2015-02-26 02:08:39', '2015-02-26 02:08:39'),
+(90, '', 0, 1, 1, 1100, 1, '2015-02-26 02:09:10', '2015-02-26 02:09:10'),
+(86, '', 0, 1, 1, 600, 1, '2015-02-26 02:05:19', '2015-02-26 02:05:19'),
+(85, '', 0, 1, 1, 500, 1, '2015-02-26 02:04:55', '2015-02-26 02:04:55'),
+(84, '', 0, 1, 1, 400, 1, '2015-02-26 02:04:30', '2015-02-26 02:04:30'),
+(81, '', 0, 1, 1, 100, 1, '2015-02-26 01:59:38', '2015-02-26 01:59:46'),
+(82, '', 0, 1, 1, 200, 1, '2015-02-26 02:03:40', '2015-02-26 02:03:40'),
+(83, '', 0, 1, 1, 300, 1, '2015-02-26 02:04:06', '2015-02-26 02:04:06');
 
 -- --------------------------------------------------------
 
@@ -350,25 +349,23 @@ CREATE TABLE `oc_category_description` (
 --
 
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_description`, `meta_keyword`) VALUES
-(57, 5, 'Aromatherapy', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(25, 5, 'Health concern', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n', '', ''),
-(24, 5, 'Grocery Products', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(36, 5, 'Incididunt ut labore ', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(20, 5, 'Body &amp; Bath', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(59, 5, 'Minerals', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(71, 5, 'Sexual health', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(17, 5, 'Diet &amp; Nutrition', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(75, 5, 'Sport nutrition', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(76, 5, 'Supplements', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(77, 5, 'Tea &amp; Coffee', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(78, 5, 'Vitamins ', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(28, 5, 'Elit sed do eiusmod tempor', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(30, 5, 'Lorem ipsum dolor sit amet ', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(72, 5, 'Conse ctetur adipisicing', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(35, 5, 'Et dolore magna aliqua', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(80, 5, 'Sit amet', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(79, 5, 'Lorem ipsum dolor', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', ''),
-(73, 5, 'Incididunt ut labore', '&lt;p&gt;&lt;strong&gt;Health&lt;/strong&gt; is one of most important things in our life. We think that it is a real luck to have a strong health. Our way of life doesn’t increase the physiological condition of our body. Alcohol, cigarettes, unhealthy food, stresses and other factors have a great influence on our health. The human’s immune system is very uncertain thing because there is a countless quantity of different dangerous viruses and bacteria.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is very noble activity to protect health and help people recover. Our main goal is to find the easiest way of treatment. Our company states that our goods are of premium quality. This product is totally safe for your health. It has passed many various &lt;strong&gt;tests&lt;/strong&gt; without a single failure. It is really a product of a new generation.&lt;/p&gt;\r\n\r\n&lt;p&gt;Well, if you are ready to purchase our goods we will help you to make a right choice. If you have some questions, you can address our &lt;strong&gt;support system&lt;/strong&gt;.&lt;/p&gt;\r\n', '', '');
+(81, 5, 'Naturais', '', '', ''),
+(82, 5, 'Cápsulas', '', '', ''),
+(83, 5, 'Orgânicos', '', '', ''),
+(84, 5, 'Geleias', '', '', ''),
+(85, 5, 'Chás', '', '', ''),
+(86, 5, 'Emagrecedores', '', '', ''),
+(87, 5, 'Veganos e Vegetarianos', '', '', ''),
+(88, 5, 'Diet e Light', '', '', ''),
+(89, 5, 'Bio florais', '', '', ''),
+(90, 5, 'Farináceos', '', '', ''),
+(91, 5, 'Grãos e Sementes', '', '', ''),
+(92, 5, 'Granolas', '', '', ''),
+(93, 5, 'Mel e Derivados', '', '', ''),
+(94, 5, 'Chocolates', '', '', ''),
+(95, 5, 'Barras de Cereais', '', '', ''),
+(96, 5, 'Congelados', '', '', ''),
+(97, 5, 'Sem glúten', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -380,15 +377,6 @@ CREATE TABLE `oc_category_filter` (
   `category_id` int(11) NOT NULL,
   `filter_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_category_filter`
---
-
-INSERT INTO `oc_category_filter` (`category_id`, `filter_id`) VALUES
-(20, 1),
-(20, 2),
-(20, 3);
 
 -- --------------------------------------------------------
 
@@ -407,29 +395,15 @@ CREATE TABLE `oc_category_path` (
 --
 
 INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
-(25, 25, 0),
-(28, 28, 1),
-(28, 17, 0),
-(79, 17, 0),
-(35, 17, 0),
-(35, 35, 1),
-(79, 72, 1),
-(36, 17, 0),
-(36, 36, 1),
-(30, 30, 1),
-(30, 17, 0),
-(20, 20, 0),
-(27, 20, 0),
-(27, 27, 1),
-(26, 20, 0),
-(26, 26, 1),
-(24, 24, 0),
+(87, 87, 0),
+(97, 81, 0),
+(97, 97, 1),
+(88, 88, 0),
 (18, 18, 0),
 (45, 18, 0),
 (45, 45, 1),
 (46, 18, 0),
 (46, 46, 1),
-(17, 17, 0),
 (33, 33, 0),
 (34, 34, 0),
 (37, 34, 0),
@@ -471,22 +445,20 @@ INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
 (55, 55, 1),
 (56, 34, 0),
 (56, 56, 1),
-(57, 57, 0),
-(59, 59, 0),
-(71, 71, 0),
-(72, 72, 1),
-(73, 72, 1),
-(73, 73, 2),
-(72, 17, 0),
-(75, 75, 0),
-(76, 76, 0),
-(77, 77, 0),
-(78, 78, 0),
-(79, 79, 2),
-(80, 72, 1),
-(80, 17, 0),
-(80, 80, 2),
-(73, 17, 0);
+(86, 86, 0),
+(85, 85, 0),
+(95, 95, 0),
+(93, 93, 0),
+(92, 92, 0),
+(96, 96, 0),
+(84, 84, 0),
+(83, 83, 0),
+(82, 82, 0),
+(81, 81, 0),
+(90, 90, 0),
+(91, 91, 0),
+(89, 89, 0),
+(94, 94, 0);
 
 -- --------------------------------------------------------
 
@@ -516,25 +488,23 @@ CREATE TABLE `oc_category_to_store` (
 --
 
 INSERT INTO `oc_category_to_store` (`category_id`, `store_id`) VALUES
-(17, 0),
-(20, 0),
-(24, 0),
-(25, 0),
-(28, 0),
-(30, 0),
-(35, 0),
-(36, 0),
-(57, 0),
-(59, 0),
-(71, 0),
-(72, 0),
-(73, 0),
-(75, 0),
-(76, 0),
-(77, 0),
-(78, 0),
-(79, 0),
-(80, 0);
+(81, 0),
+(82, 0),
+(83, 0),
+(84, 0),
+(85, 0),
+(86, 0),
+(87, 0),
+(88, 0),
+(89, 0),
+(90, 0),
+(91, 0),
+(92, 0),
+(93, 0),
+(94, 0),
+(95, 0),
+(96, 0),
+(97, 0);
 
 -- --------------------------------------------------------
 
@@ -900,7 +870,7 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(4, 'Real', 'BRL', 'R$ ', '', '2', 1.00000000, 1, '2015-02-20 16:33:54');
+(4, 'Real', 'BRL', 'R$ ', '', '2', 1.00000000, 1, '2015-02-26 02:16:17');
 
 -- --------------------------------------------------------
 
@@ -928,7 +898,7 @@ CREATE TABLE `oc_customer` (
   `approved` tinyint(1) NOT NULL,
   `token` varchar(255) NOT NULL,
   `date_added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_customer`
@@ -936,7 +906,8 @@ CREATE TABLE `oc_customer` (
 
 INSERT INTO `oc_customer` (`customer_id`, `store_id`, `firstname`, `lastname`, `email`, `telephone`, `fax`, `password`, `salt`, `cart`, `wishlist`, `newsletter`, `address_id`, `customer_group_id`, `ip`, `status`, `approved`, `token`, `date_added`) VALUES
 (1, 0, 'Demo', 'Demo', 'admin@admin.com', '555555555555', '', 'a8e36cf1a623773890e55496017a9652ea345a11', '5f5dd0642', 'a:2:{s:4:"43::";i:2;s:4:"29::";i:1;}', 'a:12:{i:0;s:2:"40";i:1;s:2:"29";i:2;s:2:"35";i:3;s:2:"30";i:4;s:3:"42;";i:5;s:3:"30;";i:6;s:2:"45";i:7;s:2:"42";i:8;s:2:"49";i:9;s:2:"46";i:10;s:2:"34";i:11;s:2:"43";}', 0, 1, 1, '192.168.9.1', 1, 1, '', '2014-01-14 09:29:45'),
-(2, 0, 'admin', 'admin', 'admin@demolink.org', '111', '', 'c02aa9c4d5fc5295b4dde1c3f71518d1aa48e7ec', '2c9b5e5ae', 'a:3:{s:4:"35::";i:1;s:4:"28::";i:1;s:4:"43::";i:1;}', 'a:4:{i:0;s:2:"45";i:1;s:2:"42";i:2;s:2:"35";i:3;s:2:"46";}', 0, 2, 1, '192.168.9.1', 1, 1, '', '2014-07-09 12:35:59');
+(2, 0, 'admin', 'admin', 'admin@demolink.org', '111', '', 'c02aa9c4d5fc5295b4dde1c3f71518d1aa48e7ec', '2c9b5e5ae', 'a:3:{s:4:"35::";i:1;s:4:"28::";i:1;s:4:"43::";i:1;}', 'a:4:{i:0;s:2:"45";i:1;s:2:"42";i:2;s:2:"35";i:3;s:2:"46";}', 0, 2, 1, '192.168.9.1', 1, 1, '', '2014-07-09 12:35:59'),
+(3, 0, 'Fernando', 'Mendes', 'fernando.mendes@webca.com.br', '11 976495157', '', '08cd92f0df40c8d3fdd0bf631df6f0d02708b4b2', '6be713832', 'a:1:{s:32:"46:YToxOntpOjIyNztzOjI6IjE3Ijt9:";i:1;}', '', 0, 3, 1, '127.0.0.1', 1, 1, '', '2015-02-26 02:17:49');
 
 -- --------------------------------------------------------
 
@@ -1031,7 +1002,7 @@ CREATE TABLE `oc_customer_ip` (
   `customer_id` int(11) NOT NULL,
   `ip` varchar(40) NOT NULL,
   `date_added` datetime NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_customer_ip`
@@ -1039,7 +1010,8 @@ CREATE TABLE `oc_customer_ip` (
 
 INSERT INTO `oc_customer_ip` (`customer_ip_id`, `customer_id`, `ip`, `date_added`) VALUES
 (1, 1, '192.168.9.1', '2014-01-14 09:29:51'),
-(2, 2, '192.168.9.1', '2014-07-09 12:36:01');
+(2, 2, '192.168.9.1', '2014-07-09 12:36:01'),
+(3, 3, '127.0.0.1', '2015-02-26 02:17:50');
 
 -- --------------------------------------------------------
 
@@ -1185,21 +1157,19 @@ CREATE TABLE `oc_extension` (
 `extension_id` int(11) NOT NULL,
   `type` varchar(32) NOT NULL,
   `code` varchar(32) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=502 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=505 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_extension`
 --
 
 INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
-(23, 'payment', 'cod'),
 (22, 'total', 'shipping'),
 (57, 'total', 'sub_total'),
 (58, 'total', 'tax'),
 (59, 'total', 'total'),
 (468, 'module', 'latest'),
 (390, 'total', 'credit'),
-(387, 'shipping', 'flat'),
 (349, 'total', 'handling'),
 (350, 'total', 'low_order_fee'),
 (389, 'total', 'coupon'),
@@ -1207,7 +1177,6 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (464, 'module', 'account'),
 (393, 'total', 'reward'),
 (398, 'total', 'voucher'),
-(407, 'payment', 'free_checkout'),
 (444, 'module', 'featured'),
 (440, 'module', 'banner'),
 (467, 'module', 'information'),
@@ -1215,11 +1184,13 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (466, 'module', 'bestseller'),
 (499, 'module', 'manufacturer'),
 (449, 'module', 'special'),
-(481, 'shipping', 'free'),
+(503, 'payment', 'pagseguro'),
 (494, 'module', 'compare'),
 (495, 'module', 'vqmod_manager'),
 (500, 'module', 'newcarousel'),
-(501, 'module', 'category');
+(501, 'module', 'category'),
+(502, 'shipping', 'correios'),
+(504, 'payment', 'cielo');
 
 -- --------------------------------------------------------
 
@@ -1304,6 +1275,18 @@ INSERT INTO `oc_filter_group_description` (`filter_group_id`, `language_id`, `na
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `oc_ga_data`
+--
+
+CREATE TABLE `oc_ga_data` (
+  `ga_id` varchar(32) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `obj` text COLLATE utf8_bin,
+  `user` varchar(11) COLLATE utf8_bin NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `oc_geo_zone`
 --
 
@@ -1364,10 +1347,10 @@ CREATE TABLE `oc_information_description` (
 --
 
 INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`) VALUES
-(4, 5, 'Sobre nós', '&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-thumbs-up&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non proident&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-gift&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore et&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-truck&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Proident sunt in culpa qui offici&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n'),
-(6, 5, 'Entrega', '&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-thumbs-up&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non proident&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-gift&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore et&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-truck&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Proident sunt in culpa qui offici&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n'),
-(3, 5, 'Políticas de privacidade', '&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-thumbs-up&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non proident&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-gift&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore et&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-truck&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Proident sunt in culpa qui offici&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n'),
-(5, 5, 'Termos e condições', '&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-thumbs-up&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non proident&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-gift&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore et&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-truck&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Proident sunt in culpa qui offici&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n');
+(4, 5, 'Sobre nós', '&lt;div class=&quot;about-page&quot;&gt;\r\n&lt;p&gt;A Natural Store é uma empresa física e on-line comprometida com&amp;nbsp;&lt;br /&gt;\r\nsua saúde e bem-estar oferecendo produtos naturais, orgânicos,&amp;nbsp;&lt;br /&gt;\r\nfuncionais e suplementos alimentares.&lt;/p&gt;\r\n\r\n&lt;p&gt;Somos uma empresa jovem nesse segmento de naturais, mas com&amp;nbsp;&lt;br /&gt;\r\nprincipal foco na sua satisfação através da simplicidade, agilidade&amp;nbsp;&lt;br /&gt;\r\ne respeito. Apoiados nesses valores e com mais de 30 anos no&amp;nbsp;&lt;br /&gt;\r\nsegmentos de boutique de carnes (Boutique de Carnes Fast Beef),&lt;br /&gt;\r\no início de nossa nova &amp;nbsp;atividade &amp;nbsp;contribui para a evolução nas&amp;nbsp;&lt;br /&gt;\r\nrelações de consumo de produtos naturais e saudáveis com ótima&amp;nbsp;&lt;br /&gt;\r\nqualidade, segurança e resultado.&lt;/p&gt;\r\n\r\n&lt;p&gt;Todos os produtos oferecidos na Natural Store são registrados&amp;nbsp;&lt;br /&gt;\r\nnos órgãos competentes assegurando sua procedência e qualidade.&lt;br /&gt;\r\nAlém de tudo isso, oferecemos o que há de melhor em produtos&amp;nbsp;&lt;br /&gt;\r\nnaturais e saudáveis buscando selecionar os itens oferecidos com&amp;nbsp;&lt;br /&gt;\r\ncritérios como: alta qualidade, ótimos resultados e segurança.&lt;/p&gt;\r\n\r\n&lt;p&gt;Contudo, estamos se desenvolvendo no mercado de produtos naturais&lt;br /&gt;\r\ne conquistando o reconhecimento dos clientes como uma empresa&amp;nbsp;&lt;br /&gt;\r\nque oferece produtos e serviços de ótima qualidade e com preços&amp;nbsp;&lt;br /&gt;\r\ncompetitivos.&lt;/p&gt;\r\n&lt;/div&gt;\r\n'),
+(3, 5, 'Políticas de privacidade', '&lt;p style=&quot;font-size: 13px; line-height: 20.7999992370605px;&quot;&gt;Em nossa loja você compra com total tranquilidade, pois temos&amp;nbsp;&lt;br /&gt;\r\ncertificado de segurança, garantindo toda a segurança das suas&amp;nbsp;&lt;br /&gt;\r\ninformações cadastrais. Devemos lembrar que são armazenados&amp;nbsp;&lt;br /&gt;\r\napenas as informações necessárias para emissão de nota fiscal&amp;nbsp;&lt;br /&gt;\r\ne entrega de sua compra.&lt;br /&gt;\r\nTudo isto é feito para que você possa ter ainda mais conforto e&lt;br /&gt;\r\n&amp;nbsp;tranquilidade ao comprar em nossa loja virtual.&lt;/p&gt;\r\n\r\n&lt;p style=&quot;font-size: 13px; line-height: 20.7999992370605px;&quot;&gt;Temos um enorme apreço pela individualidade e privacidade de&amp;nbsp;&lt;br /&gt;\r\nnossos usuários, tendo o máximo respeito pelo sigilo de&amp;nbsp;&lt;br /&gt;\r\ninformações obtidas através da loja virtual.&lt;/p&gt;\r\n\r\n&lt;p style=&quot;font-size: 13px; line-height: 20.7999992370605px;&quot;&gt;Nosso compromisso é manter em sigilo absoluto todas e quaisquer&amp;nbsp;&lt;br /&gt;\r\ninformações de nossos usuários, obtidas através de nosso site,&amp;nbsp;&lt;br /&gt;\r\nrespeitadas as exceções previstas nesta política.&lt;/p&gt;\r\n\r\n&lt;p style=&quot;font-size: 13px; line-height: 20.7999992370605px;&quot;&gt;As informações fornecidas por você serão mantidas em sigilo e serão&amp;nbsp;&lt;br /&gt;\r\nutilizadas apenas para agilizar sua relação de cliente com nossa loja.&amp;nbsp;&lt;br /&gt;\r\nEntre outras coisas, desejamos ajudá-lo a encontrar as informações&amp;nbsp;&lt;br /&gt;\r\nque você precisa mais rapidamente no nosso site e informá-lo sobre&amp;nbsp;&lt;br /&gt;\r\natualizações de produtos, ofertas especiais e novos serviços da loja.&lt;/p&gt;\r\n\r\n&lt;p style=&quot;font-size: 13px; line-height: 20.7999992370605px;&quot;&gt;Todas as informações consideradas sigilosas, para efeito desta política,&amp;nbsp;&lt;br /&gt;\r\nserão usadas exclusivamente por nós, objetivando o aprimoramento de&amp;nbsp;&lt;br /&gt;\r\nnossa relação com você.&lt;/p&gt;\r\n\r\n&lt;p style=&quot;font-size: 13px; line-height: 20.7999992370605px;&quot;&gt;Informações pessoais e individuais não serão vendidas ou repassadas&amp;nbsp;&lt;br /&gt;\r\npor nossa loja a terceiros sob nenhuma hipótese.&lt;/p&gt;\r\n\r\n&lt;p style=&quot;font-size: 13px; line-height: 20.7999992370605px;&quot;&gt;A nossa loja se reserva o direito de produzir análises estatísticas&amp;nbsp;&lt;br /&gt;\r\nagregadas de características ou comportamento de seus usuários,&lt;br /&gt;\r\nobjetivando a medição de interesse na procura de produtos e serviços&lt;br /&gt;\r\ncolocados à disposição em seu site.&lt;/p&gt;\r\n\r\n&lt;p style=&quot;font-size: 13px; line-height: 20.7999992370605px;&quot;&gt;&lt;strong&gt;Devoluções&lt;/strong&gt;&lt;/p&gt;\r\n\r\n&lt;p style=&quot;font-size: 13px; line-height: 20.7999992370605px;&quot;&gt;A troca ou devolução de produtos adquiridos na Natural Store é garantida mediante&lt;br /&gt;\r\napresentação de cupom fiscal em até 7 dias a contar da data de compra ou no&lt;br /&gt;\r\nrecebimento do pedido. A troca ou devolução pode ser feita diretamente na loja.&amp;nbsp;&lt;/p&gt;\r\n\r\n&lt;p style=&quot;font-size: 13px; line-height: 20.7999992370605px;&quot;&gt;Os valores dos produtos devolvidos e do frete serão ressarcidos integralmente desde&amp;nbsp;&lt;br /&gt;\r\nque não tenha ocorrido violação do produto, conforme estabelecido pelo Código de&amp;nbsp;&lt;br /&gt;\r\nDefesa do Consumidor.&lt;/p&gt;\r\n'),
+(6, 5, 'Entrega', '&lt;p&gt;As entregas de compras realizadas fora da cidade de Limeira - SP em nossa loja virtual&amp;nbsp;&lt;br /&gt;\r\nsão realizadas através dos Correios em todo território nacional.&lt;br /&gt;\r\nOs envios ocorrem em até 2 dia úteis a partir do momento da confirmação de pagamento.&lt;br /&gt;\r\nO prazo exibido na estimativa de entrega se refere a quanto tempo a entrega ocorrerá&amp;nbsp;&lt;br /&gt;\r\napós o dia de postagem.&amp;nbsp;&lt;br /&gt;\r\nAs formas de envio são exibidas aos clientes de acordo com a disponibilidade do serviço&amp;nbsp;&lt;br /&gt;\r\nde entregas para a região do destinatário.&lt;/p&gt;\r\n\r\n&lt;p&gt;As entregas de compras realizadas na cidade de Limeira - SP serão feitas por um&lt;br /&gt;\r\nfuncionário exclusivo da loja.&amp;nbsp;&lt;br /&gt;\r\nOs envios, dentro da cidade de Limeira - SP, ocorrem em até 1 dia útil a partir do&amp;nbsp;&lt;br /&gt;\r\nmomento da confirmação de pagamento.&lt;br /&gt;\r\nPodendo ser entregue no mesmo dia ou no máximo 1 dia útil.&amp;nbsp;&lt;/p&gt;\r\n\r\n&lt;p&gt;Caso tenha qualquer dúvida, por favor entre em contato: (19) 3033-3389.&lt;/p&gt;\r\n'),
+(5, 5, 'Termos e condições', '&lt;p&gt;Em nossa loja você compra com total tranquilidade, pois temos&amp;nbsp;&lt;br /&gt;\r\ncertificado de segurança, garantindo toda a segurança das suas&amp;nbsp;&lt;br /&gt;\r\ninformações cadastrais. Devemos lembrar que são armazenados&amp;nbsp;&lt;br /&gt;\r\napenas as informações necessárias para emissão de nota fiscal&amp;nbsp;&lt;br /&gt;\r\ne entrega de sua compra.&lt;br /&gt;\r\nTudo isto é feito para que você possa ter ainda mais conforto e&lt;br /&gt;\r\n&amp;nbsp;tranquilidade ao comprar em nossa loja virtual.&lt;/p&gt;\r\n\r\n&lt;p&gt;Temos um enorme apreço pela individualidade e privacidade de&amp;nbsp;&lt;br /&gt;\r\nnossos usuários, tendo o máximo respeito pelo sigilo de&amp;nbsp;&lt;br /&gt;\r\ninformações obtidas através da loja virtual.&lt;/p&gt;\r\n\r\n&lt;p&gt;Nosso compromisso é manter em sigilo absoluto todas e quaisquer&amp;nbsp;&lt;br /&gt;\r\ninformações de nossos usuários, obtidas através de nosso site,&amp;nbsp;&lt;br /&gt;\r\nrespeitadas as exceções previstas nesta política.&lt;/p&gt;\r\n\r\n&lt;p&gt;As informações fornecidas por você serão mantidas em sigilo e serão&amp;nbsp;&lt;br /&gt;\r\nutilizadas apenas para agilizar sua relação de cliente com nossa loja.&amp;nbsp;&lt;br /&gt;\r\nEntre outras coisas, desejamos ajudá-lo a encontrar as informações&amp;nbsp;&lt;br /&gt;\r\nque você precisa mais rapidamente no nosso site e informá-lo sobre&amp;nbsp;&lt;br /&gt;\r\natualizações de produtos, ofertas especiais e novos serviços da loja.&lt;/p&gt;\r\n\r\n&lt;p&gt;Todas as informações consideradas sigilosas, para efeito desta política,&amp;nbsp;&lt;br /&gt;\r\nserão usadas exclusivamente por nós, objetivando o aprimoramento de&amp;nbsp;&lt;br /&gt;\r\nnossa relação com você.&lt;/p&gt;\r\n\r\n&lt;p&gt;Informações pessoais e individuais não serão vendidas ou repassadas&amp;nbsp;&lt;br /&gt;\r\npor nossa loja a terceiros sob nenhuma hipótese.&lt;/p&gt;\r\n\r\n&lt;p&gt;A nossa loja se reserva o direito de produzir análises estatísticas&amp;nbsp;&lt;br /&gt;\r\nagregadas de características ou comportamento de seus usuários,&lt;br /&gt;\r\nobjetivando a medição de interesse na procura de produtos e serviços&lt;br /&gt;\r\ncolocados à disposição em seu site.&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;strong&gt;Devoluções&lt;/strong&gt;&lt;/p&gt;\r\n\r\n&lt;p&gt;A troca ou devolução de produtos adquiridos na Natural Store é garantida mediante&lt;br /&gt;\r\napresentação de cupom fiscal em até 7 dias a contar da data de compra ou no&lt;br /&gt;\r\nrecebimento do pedido. A troca ou devolução pode ser feita diretamente na loja.&amp;nbsp;&lt;/p&gt;\r\n\r\n&lt;p&gt;Os valores dos produtos devolvidos e do frete serão ressarcidos integralmente desde&amp;nbsp;&lt;br /&gt;\r\nque não tenha ocorrido violação do produto, conforme estabelecido pelo Código de&amp;nbsp;&lt;br /&gt;\r\nDefesa do Consumidor.&lt;/p&gt;\r\n');
 
 -- --------------------------------------------------------
 
@@ -1774,13 +1757,14 @@ CREATE TABLE `oc_order` (
   `accept_language` varchar(255) NOT NULL,
   `date_added` datetime NOT NULL,
   `date_modified` datetime NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_order`
 --
 
 INSERT INTO `oc_order` (`order_id`, `invoice_no`, `invoice_prefix`, `store_id`, `store_name`, `store_url`, `customer_id`, `customer_group_id`, `firstname`, `lastname`, `email`, `telephone`, `fax`, `payment_firstname`, `payment_lastname`, `payment_company`, `payment_company_id`, `payment_tax_id`, `payment_address_1`, `payment_address_2`, `payment_city`, `payment_postcode`, `payment_country`, `payment_country_id`, `payment_zone`, `payment_zone_id`, `payment_address_format`, `payment_method`, `payment_code`, `shipping_firstname`, `shipping_lastname`, `shipping_company`, `shipping_address_1`, `shipping_address_2`, `shipping_city`, `shipping_postcode`, `shipping_country`, `shipping_country_id`, `shipping_zone`, `shipping_zone_id`, `shipping_address_format`, `shipping_method`, `shipping_code`, `comment`, `total`, `order_status_id`, `affiliate_id`, `commission`, `language_id`, `currency_id`, `currency_code`, `currency_value`, `ip`, `forwarded_ip`, `user_agent`, `accept_language`, `date_added`, `date_modified`) VALUES
+(14, 0, 'natural-2015', 0, 'Natural Store Limeira', 'http://naturalstorelimeira.com.br/', 3, 1, 'Fernando', 'Mendes', 'fernando.mendes@webca.com.br', '11 976495157', '', 'Fernando', 'Mendes', '', '', '', 'Lomas Valentinas, 241', '', 'São Caetano do Sul', '09560260', 'Brazil', 30, 'São Paulo', 464, '', 'PagSeguro', 'pagseguro', 'Fernando', 'Mendes', '', 'Lomas Valentinas, 241', '', 'São Caetano do Sul', '09560260', 'Brazil', 30, 'São Paulo', 464, '', 'PAC. Entrega em 4 dias úteis', 'correios.41106', '', 37.5800, 21, 0, 0.0000, 5, 4, 'BRL', 1.00000000, '127.0.0.1', '', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36', 'en-US,en;q=0.8,pt;q=0.6', '2015-02-26 02:20:14', '2015-02-26 02:20:21'),
 (2, 0, 'INV-2012-00', 0, 'Whatnot Services', 'http://192.168.9.23/433/', 2, 1, 'admin', 'admin', 'admin@demolink.org', '111', '', 'admin', 'admin', '', '', '', '111', '111', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Cash On Delivery', 'cod', 'admin', 'admin', '', '111', '111', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Flat Shipping Rate', 'flat.flat', '', 480.7000, 0, 0, 0.0000, 1, 2, 'USD', 1.00000000, '192.168.9.1', '192.168.9.23', 'Mozilla/5.0 (Windows NT 5.1; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-gb,en;q=0.5', '2014-07-09 15:40:38', '2014-07-09 15:40:38'),
 (3, 0, 'INV-2012-00', 0, 'Whatnot Services', 'http://192.168.9.23/433/', 2, 1, 'admin', 'admin', 'admin@demolink.org', '111', '', 'admin', 'admin', '', '', '', '111', '111', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Cash On Delivery', 'cod', 'admin', 'admin', '', '111', '111', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Flat Shipping Rate', 'flat.flat', '', 480.7000, 0, 0, 0.0000, 1, 2, 'USD', 1.00000000, '192.168.9.1', '192.168.9.23', 'Mozilla/5.0 (Windows NT 5.1; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-gb,en;q=0.5', '2014-07-09 15:41:50', '2014-07-09 15:41:50'),
 (4, 0, 'INV-2012-00', 0, 'Whatnot Services', 'http://192.168.9.23/433/', 2, 1, 'admin', 'admin', 'admin@demolink.org', '111', '', 'admin', 'admin', '', '', '', '111', '111', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Cash On Delivery', 'cod', 'admin', 'admin', '', '111', '111', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Flat Shipping Rate', 'flat.flat', '', 480.7000, 0, 0, 0.0000, 1, 2, 'USD', 1.00000000, '192.168.9.1', '192.168.9.23', 'Mozilla/5.0 (Windows NT 5.1; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-gb,en;q=0.5', '2014-07-09 15:43:01', '2014-07-09 15:43:01'),
@@ -1793,6 +1777,28 @@ INSERT INTO `oc_order` (`order_id`, `invoice_no`, `invoice_prefix`, `store_id`, 
 (11, 0, 'INV-2012-00', 0, 'Nutrition and Supplements', 'http://192.168.9.23/442/', 2, 1, 'admin', 'admin', 'admin@demolink.org', '111', '', 'admin', 'admin', '', '', '', '111', '111', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Cash On Delivery', 'cod', 'admin', 'admin', '', '111', '111', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Flat Shipping Rate', 'flat.flat', '', 29.5823, 0, 0, 0.0000, 1, 2, 'USD', 1.00000000, '192.168.9.1', '192.168.9.23', 'Mozilla/5.0 (Windows NT 5.1; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-gb,en;q=0.5', '2014-07-18 18:06:36', '2014-07-18 18:06:36'),
 (12, 0, 'INV-2012-00', 0, 'Nutrition and Supplements', 'http://192.168.9.23/442/', 2, 1, 'admin', 'admin', 'admin@demolink.org', '111', '', 'admin', 'admin', '', '', '', '111', '111', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Cash On Delivery', 'cod', 'admin', 'admin', '', '111', '111', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Flat Shipping Rate', 'flat.flat', '', 29.5823, 0, 0, 0.0000, 1, 2, 'USD', 1.00000000, '192.168.9.1', '192.168.9.23', 'Mozilla/5.0 (Windows NT 5.1; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-gb,en;q=0.5', '2014-07-18 18:07:48', '2014-07-18 18:07:48'),
 (13, 0, 'INV-2012-00', 0, 'Nutrition and Supplements', 'http://192.168.9.23/442/', 2, 1, 'admin', 'admin', 'admin@demolink.org', '111', '', 'admin', 'admin', '', '', '', '111', '111', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Cash On Delivery', 'cod', 'admin', 'admin', '', '111', '111', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Flat Shipping Rate', 'flat.flat', '', 55.4700, 0, 0, 0.0000, 1, 2, 'USD', 1.00000000, '192.168.9.1', '192.168.9.23', 'Mozilla/5.0 (Windows NT 5.1; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-gb,en;q=0.5', '2014-07-21 16:37:32', '2014-07-21 16:37:32');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_order_cielo`
+--
+
+CREATE TABLE `oc_order_cielo` (
+`id` int(15) NOT NULL,
+  `order_id` varchar(15) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `transacao` varchar(25) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `tid` varchar(25) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `buy_page` varchar(6) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `operacao` varchar(25) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `status` varchar(2) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `valor` int(12) NOT NULL DEFAULT '0',
+  `parcelas` int(2) NOT NULL DEFAULT '0',
+  `teste` varchar(2) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `xml_enviado` text COLLATE utf8_bin NOT NULL,
+  `xml_recebido` text COLLATE utf8_bin NOT NULL,
+  `date_added` datetime NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -1900,7 +1906,14 @@ CREATE TABLE `oc_order_history` (
   `notify` tinyint(1) NOT NULL DEFAULT '0',
   `comment` text NOT NULL,
   `date_added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `oc_order_history`
+--
+
+INSERT INTO `oc_order_history` (`order_history_id`, `order_id`, `order_status_id`, `notify`, `comment`, `date_added`) VALUES
+(2, 14, 21, 1, '', '2015-02-26 02:20:21');
 
 -- --------------------------------------------------------
 
@@ -1917,7 +1930,14 @@ CREATE TABLE `oc_order_option` (
   `name` varchar(255) NOT NULL,
   `value` text NOT NULL,
   `type` varchar(32) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `oc_order_option`
+--
+
+INSERT INTO `oc_order_option` (`order_option_id`, `order_id`, `order_product_id`, `product_option_id`, `product_option_value_id`, `name`, `value`, `type`) VALUES
+(1, 14, 26, 227, 17, 'Select', 'Non-coated tablets, in packages of 10 (10x1)', 'select');
 
 -- --------------------------------------------------------
 
@@ -1936,13 +1956,14 @@ CREATE TABLE `oc_order_product` (
   `total` decimal(15,4) NOT NULL DEFAULT '0.0000',
   `tax` decimal(15,4) NOT NULL DEFAULT '0.0000',
   `reward` int(8) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_order_product`
 --
 
 INSERT INTO `oc_order_product` (`order_product_id`, `order_id`, `product_id`, `name`, `model`, `quantity`, `price`, `total`, `tax`, `reward`) VALUES
+(26, 14, 46, 'Lorem ipsum dolor sit amet consectetur adipisicing elit', 'Product 19', 1, 20.3300, 20.3300, 0.0000, 0),
 (2, 2, 45, 'Dolor sit amet conse.', 'Product 18', 1, 199.0000, 199.0000, 36.8250, 800),
 (3, 2, 33, 'Ecco enswom sucaal.', 'Product 6', 1, 200.0000, 200.0000, 37.0000, 0),
 (4, 3, 45, 'Dolor sit amet conse.', 'Product 18', 1, 199.0000, 199.0000, 36.8250, 800),
@@ -2021,13 +2042,25 @@ CREATE TABLE `oc_order_status` (
 `order_status_id` int(11) NOT NULL,
   `language_id` int(11) NOT NULL,
   `name` varchar(32) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_order_status`
 --
 
 INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
+(22, 5, 'Aguardando pagamento'),
+(21, 5, 'Aguardando retorno'),
+(20, 5, 'Processado'),
+(19, 5, 'Processando'),
+(18, 5, 'Falhou (Aguardando)'),
+(17, 5, 'Falhou'),
+(28, 5, 'Cancelada'),
+(27, 5, 'Devolvida'),
+(26, 5, 'Disputa'),
+(25, 5, 'Disponível'),
+(24, 5, 'Paga'),
+(23, 5, 'Em análise'),
 (2, 5, 'Processing'),
 (3, 5, 'Shipped'),
 (7, 5, 'Canceled'),
@@ -2057,13 +2090,16 @@ CREATE TABLE `oc_order_total` (
   `text` varchar(255) NOT NULL,
   `value` decimal(15,4) NOT NULL DEFAULT '0.0000',
   `sort_order` int(3) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=66 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_order_total`
 --
 
 INSERT INTO `oc_order_total` (`order_total_id`, `order_id`, `code`, `title`, `text`, `value`, `sort_order`) VALUES
+(68, 14, 'total', 'Total', 'R$ 37,58', 37.5800, 9),
+(67, 14, 'shipping', 'PAC. Entrega em 4 dias úteis', 'R$ 17,25', 17.2500, 3),
+(66, 14, 'sub_total', 'Sub-total', 'R$ 20,33', 20.3300, 1),
 (6, 2, 'sub_total', 'Sub-Total', '$399.00', 399.0000, 1),
 (7, 2, 'shipping', 'Flat Shipping Rate', '$5.00', 5.0000, 3),
 (8, 2, 'tax', 'Eco Tax (-2.00)', '$6.00', 6.0000, 5),
@@ -2194,7 +2230,7 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (28, 'Product 1', '', '', '', '', '', '', '', 938, 7, 'data/Nutrition-Now1.png', 11, 1, 5.8000, 200, 9, '2009-02-03', 146.40000000, 2, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 16:06:50', '2014-07-18 14:32:05', 0),
 (29, 'Product 2', '', '', '', '', '', '', '', 995, 6, 'data/Natural-Amino1.png', 6, 1, 20.3300, 0, 9, '2009-02-03', 133.00000000, 2, 0.00000000, 0.00000000, 0.00000000, 3, 1, 1, 0, 1, '2009-02-03 16:42:17', '2014-07-21 14:46:57', 0),
 (30, 'Product 3', '', '', '', '', '', '', '', 699, 6, 'data/ZzzQuil-Nighttime1.png', 9, 1, 13.5200, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 16:59:00', '2014-07-18 14:37:20', 0),
-(31, 'Product 4', '', '', '', '', '', '', '', 999, 6, 'data/Optimum-Nutrition1.png', 5, 1, 20.3300, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 3, 1, 1, 0, 1, '2009-02-03 17:00:10', '2014-07-21 14:47:25', 0),
+(31, 'Product 4', '', '', '', '', '', '', '', 999, 6, 'data/Optimum-Nutrition1.png', 5, 1, 20.3300, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 3, 1, 1, 0, 1, '2009-02-03 17:00:10', '2014-07-21 14:47:25', 7),
 (32, 'Product 5', '', '', '', '', '', '', '', 997, 6, 'data/Smash-Fully1.png', 5, 1, 20.3300, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 17:07:26', '2014-07-21 14:47:41', 0),
 (33, 'Product 6', '', '', '', '', '', '', '', 984, 6, 'data/Baye-Low-Dose1.png', 11, 1, 20.3300, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 17:08:31', '2014-07-21 14:46:29', 0),
 (34, 'Product 7', '', '', '', '', '', '', '', 995, 6, 'data/Align-Digestive1.png', 8, 1, 9.2700, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 18:07:54', '2014-07-18 14:28:50', 0),
@@ -2206,7 +2242,7 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (43, 'Product 16', '', '', '', '', '', '', '', 899, 5, 'data/Accuflora-Advanced1.png', 8, 0, 13.5200, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 21:07:49', '2014-07-18 14:28:21', 0),
 (44, 'Product 17', '', '', '', '', '', '', '', 999, 5, 'data/Homeolab-USA1.png', 12, 1, 13.5000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 21:08:00', '2014-07-18 14:40:39', 0),
 (45, 'Product 18', '', '', '', '', '', '', '', 993, 5, 'data/Unisom-SleepTabs1.png', 8, 1, 13.5200, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 21:08:17', '2014-07-18 14:35:23', 0),
-(46, 'Product 19', '', '', '', '', '', '', '', 995, 5, 'data/EPH-Hardcore1.png', 10, 1, 20.3300, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 21:08:29', '2014-07-21 16:47:07', 1),
+(46, 'Product 19', '', '', '', '', '', '', '', 994, 5, 'data/EPH-Hardcore1.png', 10, 1, 20.3300, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 21:08:29', '2014-07-21 16:47:07', 2),
 (47, 'Product 21', 'sdd', '4578789', '46498', '49894654', '549564', '4684645', '', 1000, 5, 'data/Natrol-Melatonin1.png', 7, 1, 8.5000, 400, 9, '2009-02-03', 1.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 0, 1, 0, 1, '2009-02-03 21:08:40', '2014-07-18 14:39:03', 0),
 (48, 'product 20', 'test 1', '', '', '', '', '', 'test 2', 994, 5, 'data/Sleep-Support1.png', 8, 1, 14.5000, 0, 9, '2009-02-08', 1.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-08 17:21:51', '2014-07-18 14:34:33', 0),
 (49, 'Product 20', '', '', '', '', '', '', '', 994, 8, 'data/Vanicream-Moisturizing1.png', 0, 1, 9.2700, 0, 9, '2011-04-25', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 1, 1, '2011-04-26 08:57:34', '2014-07-18 14:36:42', 0);
@@ -2433,7 +2469,7 @@ INSERT INTO `oc_product_option_value` (`product_option_value_id`, `product_optio
 (2, 217, 42, 5, 42, 200, 1, 2.0000, '+', 0, '+', 2.00000000, '+'),
 (4, 217, 42, 5, 39, 88, 1, 4.0000, '+', 0, '+', 4.00000000, '+'),
 (3, 217, 42, 5, 40, 300, 0, 3.0000, '+', 0, '+', 3.00000000, '+'),
-(17, 227, 46, 5, 42, 100, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
+(17, 227, 46, 5, 42, 99, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
 (18, 227, 46, 5, 41, 100, 1, 10.0000, '+', 0, '+', 0.20000000, '+'),
 (19, 227, 46, 5, 39, 100, 1, 20.0000, '+', 5, '+', 0.30000000, '+');
 
@@ -2578,75 +2614,6 @@ CREATE TABLE `oc_product_to_category` (
   `product_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_to_category`
---
-
-INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
-(28, 20),
-(28, 24),
-(28, 25),
-(28, 30),
-(28, 57),
-(29, 20),
-(29, 24),
-(29, 30),
-(29, 36),
-(29, 57),
-(29, 71),
-(29, 72),
-(29, 73),
-(30, 20),
-(32, 30),
-(32, 71),
-(32, 72),
-(32, 73),
-(33, 17),
-(33, 20),
-(33, 28),
-(33, 35),
-(35, 20),
-(36, 25),
-(36, 35),
-(36, 57),
-(36, 71),
-(36, 72),
-(36, 73),
-(40, 20),
-(40, 24),
-(42, 20),
-(42, 28),
-(42, 59),
-(43, 17),
-(43, 20),
-(43, 30),
-(43, 35),
-(43, 71),
-(43, 72),
-(43, 73),
-(44, 17),
-(44, 20),
-(44, 28),
-(44, 35),
-(44, 36),
-(44, 57),
-(45, 17),
-(45, 20),
-(45, 25),
-(45, 28),
-(45, 71),
-(45, 72),
-(45, 73),
-(46, 20),
-(47, 20),
-(47, 59),
-(48, 20),
-(48, 28),
-(48, 35),
-(48, 36),
-(49, 57),
-(49, 59);
 
 -- --------------------------------------------------------
 
@@ -2879,7 +2846,7 @@ CREATE TABLE `oc_setting` (
   `key` varchar(64) NOT NULL,
   `value` text NOT NULL,
   `serialized` tinyint(1) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=7689 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7971 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_setting`
@@ -2893,21 +2860,13 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `se
 (5, 0, 'total', 'total_sort_order', '9', 0),
 (6, 0, 'total', 'total_status', '1', 0),
 (7, 0, 'tax', 'tax_sort_order', '5', 0),
-(8, 0, 'free_checkout', 'free_checkout_sort_order', '1', 0),
-(9, 0, 'cod', 'cod_sort_order', '5', 0),
-(10, 0, 'cod', 'cod_total', '0.01', 0),
-(11, 0, 'cod', 'cod_order_status_id', '1', 0),
-(12, 0, 'cod', 'cod_geo_zone_id', '0', 0),
-(13, 0, 'cod', 'cod_status', '1', 0),
+(7742, 0, 'pagseguro', 'pagseguro_order_cancelada', '28', 0),
+(7741, 0, 'pagseguro', 'pagseguro_order_devolvida', '27', 0),
+(7740, 0, 'pagseguro', 'pagseguro_order_disputa', '26', 0),
 (14, 0, 'shipping', 'shipping_status', '1', 0),
 (15, 0, 'shipping', 'shipping_estimator', '1', 0),
 (27, 0, 'coupon', 'coupon_sort_order', '4', 0),
 (28, 0, 'coupon', 'coupon_status', '1', 0),
-(3047, 0, 'flat', 'flat_sort_order', '1', 0),
-(3046, 0, 'flat', 'flat_status', '1', 0),
-(3045, 0, 'flat', 'flat_geo_zone_id', '0', 0),
-(3044, 0, 'flat', 'flat_tax_class_id', '9', 0),
-(3043, 0, 'flat', 'flat_cost', '5.00', 0),
 (42, 0, 'credit', 'credit_sort_order', '7', 0),
 (43, 0, 'credit', 'credit_status', '1', 0),
 (53, 0, 'reward', 'reward_sort_order', '2', 0),
@@ -2917,128 +2876,154 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `se
 (6930, 0, 'compare', 'compare_module', 'a:2:{i:0;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}i:1;a:4:{s:9:"layout_id";s:1:"2";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}}', 1),
 (94, 0, 'voucher', 'voucher_sort_order', '8', 0),
 (95, 0, 'voucher', 'voucher_status', '1', 0),
-(103, 0, 'free_checkout', 'free_checkout_status', '1', 0),
-(104, 0, 'free_checkout', 'free_checkout_order_status_id', '1', 0),
+(7739, 0, 'pagseguro', 'pagseguro_order_disponivel', '25', 0),
+(7738, 0, 'pagseguro', 'pagseguro_order_paga', '24', 0),
 (6928, 0, 'affiliate', 'affiliate_module', 'a:1:{i:0;a:4:{s:9:"layout_id";s:2:"10";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
 (6931, 0, 'filter', 'filter_module', 'a:1:{i:0;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}}', 1),
 (7169, 0, 'information', 'information_module', 'a:1:{i:0;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
-(7683, 0, 'config', 'config_encryption', '66d2c02c9f1c6b70bf863cc242de8a2f', 0),
-(7684, 0, 'config', 'config_compression', '0', 0),
-(7685, 0, 'config', 'config_error_display', '1', 0),
-(7681, 0, 'config', 'config_maintenance', '0', 0),
-(7682, 0, 'config', 'config_password', '1', 0),
-(7678, 0, 'config', 'config_seo_url', '0', 0),
-(7676, 0, 'config', 'config_shared', '0', 0),
-(7677, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai''hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwget\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
-(7679, 0, 'config', 'config_file_extension_allowed', 'txt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc\r\nrtf\r\nxls\r\nppt\r\nodt\r\nods', 0),
-(7680, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/jpeg\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/vnd.microsoft.icon\r\nimage/tiff\r\nimage/tiff\r\nimage/svg+xml\r\nimage/svg+xml\r\napplication/zip\r\napplication/x-rar-compressed\r\napplication/x-msdownload\r\napplication/vnd.ms-cab-compressed\r\naudio/mpeg\r\nvideo/quicktime\r\nvideo/quicktime\r\napplication/pdf\r\nimage/vnd.adobe.photoshop\r\napplication/postscript\r\napplication/postscript\r\napplication/postscript\r\napplication/msword\r\napplication/rtf\r\napplication/vnd.ms-excel\r\napplication/vnd.ms-powerpoint\r\napplication/vnd.oasis.opendocument.text\r\napplication/vnd.oasis.opendocument.spreadsheet', 0),
-(7675, 0, 'config', 'config_secure', '0', 0),
-(7674, 0, 'config', 'config_fraud_status_id', '7', 0),
-(7673, 0, 'config', 'config_fraud_score', '', 0),
-(7672, 0, 'config', 'config_fraud_key', '', 0),
-(7670, 0, 'config', 'config_alert_emails', '', 0),
-(7671, 0, 'config', 'config_fraud_detection', '0', 0),
-(7669, 0, 'config', 'config_account_mail', '0', 0),
-(7668, 0, 'config', 'config_alert_mail', '0', 0),
-(7666, 0, 'config', 'config_smtp_port', '25', 0),
-(7667, 0, 'config', 'config_smtp_timeout', '5', 0),
-(7665, 0, 'config', 'config_smtp_password', '', 0),
-(7664, 0, 'config', 'config_smtp_username', '', 0),
-(7663, 0, 'config', 'config_smtp_host', '', 0),
-(7662, 0, 'config', 'config_mail_parameter', '', 0),
-(7661, 0, 'config', 'config_mail_protocol', 'mail', 0),
-(7660, 0, 'config', 'config_ftp_status', '0', 0),
-(7659, 0, 'config', 'config_ftp_root', '', 0),
-(7658, 0, 'config', 'config_ftp_password', '', 0),
-(7657, 0, 'config', 'config_ftp_username', '', 0),
-(7656, 0, 'config', 'config_ftp_port', '21', 0),
-(7655, 0, 'config', 'config_ftp_host', '192.168.9.2', 0),
-(7654, 0, 'config', 'config_image_cart_height', '69', 0),
-(7653, 0, 'config', 'config_image_cart_width', '69', 0),
-(7652, 0, 'config', 'config_image_wishlist_height', '47', 0),
-(7651, 0, 'config', 'config_image_wishlist_width', '47', 0),
-(7650, 0, 'config', 'config_image_compare_height', '90', 0),
+(7938, 0, 'config', 'config_fraud_status_id', '7', 0),
+(7939, 0, 'config', 'config_secure', '0', 0),
+(7940, 0, 'config', 'config_shared', '0', 0),
+(7941, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai''hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwget\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
+(7963, 0, 'correios', 'correios_prazo_adicional', '', 0),
+(7952, 0, 'config', 'config_google_analytics', '', 0),
+(7951, 0, 'config', 'config_error_filename', 'error.txt', 0),
+(7950, 0, 'config', 'config_error_log', '1', 0),
+(7949, 0, 'config', 'config_error_display', '1', 0),
+(7948, 0, 'config', 'config_compression', '0', 0),
+(7946, 0, 'config', 'config_password', '1', 0),
+(7947, 0, 'config', 'config_encryption', '66d2c02c9f1c6b70bf863cc242de8a2f', 0),
+(7945, 0, 'config', 'config_maintenance', '0', 0),
+(7964, 0, 'correios', 'correios_tax_class_id', '0', 0),
+(7942, 0, 'config', 'config_seo_url', '0', 0),
+(7943, 0, 'config', 'config_file_extension_allowed', 'txt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc\r\nrtf\r\nxls\r\nppt\r\nodt\r\nods', 0),
+(7944, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/jpeg\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/vnd.microsoft.icon\r\nimage/tiff\r\nimage/tiff\r\nimage/svg+xml\r\nimage/svg+xml\r\napplication/zip\r\napplication/x-rar-compressed\r\napplication/x-msdownload\r\napplication/vnd.ms-cab-compressed\r\naudio/mpeg\r\nvideo/quicktime\r\nvideo/quicktime\r\napplication/pdf\r\nimage/vnd.adobe.photoshop\r\napplication/postscript\r\napplication/postscript\r\napplication/postscript\r\napplication/msword\r\napplication/rtf\r\napplication/vnd.ms-excel\r\napplication/vnd.ms-powerpoint\r\napplication/vnd.oasis.opendocument.text\r\napplication/vnd.oasis.opendocument.spreadsheet', 0),
+(7937, 0, 'config', 'config_fraud_score', '', 0),
+(7936, 0, 'config', 'config_fraud_key', '', 0),
+(7935, 0, 'config', 'config_fraud_detection', '0', 0),
+(7934, 0, 'config', 'config_alert_emails', '', 0),
+(7931, 0, 'config', 'config_smtp_timeout', '5', 0),
+(7933, 0, 'config', 'config_account_mail', '0', 0),
+(7932, 0, 'config', 'config_alert_mail', '0', 0),
+(7930, 0, 'config', 'config_smtp_port', '25', 0),
+(7929, 0, 'config', 'config_smtp_password', '', 0),
+(7928, 0, 'config', 'config_smtp_username', '', 0),
+(7927, 0, 'config', 'config_smtp_host', '', 0),
+(7926, 0, 'config', 'config_mail_parameter', '', 0),
+(7925, 0, 'config', 'config_mail_protocol', 'mail', 0),
+(7924, 0, 'config', 'config_ftp_status', '0', 0),
+(7923, 0, 'config', 'config_ftp_root', '', 0),
+(7922, 0, 'config', 'config_ftp_password', '', 0),
+(7921, 0, 'config', 'config_ftp_username', '', 0),
+(7920, 0, 'config', 'config_ftp_port', '21', 0),
+(7919, 0, 'config', 'config_ftp_host', '192.168.9.2', 0),
+(7918, 0, 'config', 'config_image_cart_height', '69', 0),
+(7917, 0, 'config', 'config_image_cart_width', '69', 0),
+(7916, 0, 'config', 'config_image_wishlist_height', '47', 0),
+(7915, 0, 'config', 'config_image_wishlist_width', '47', 0),
 (6952, 0, 'banner', 'banner_module', 'a:2:{i:0;a:7:{s:9:"banner_id";s:2:"21";s:5:"width";s:3:"270";s:6:"height";s:3:"270";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:1;a:7:{s:9:"banner_id";s:2:"16";s:5:"width";s:3:"268";s:6:"height";s:3:"268";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}}', 1),
-(7649, 0, 'config', 'config_image_compare_width', '90', 0),
-(7648, 0, 'config', 'config_image_related_height', '170', 0),
+(7914, 0, 'config', 'config_image_compare_height', '90', 0),
+(7913, 0, 'config', 'config_image_compare_width', '90', 0),
 (2056, 0, 'newslideshow', 'slideshow_module', 'a:1:{i:0;a:7:{s:9:"banner_id";s:2:"14";s:5:"width";s:4:"1000";s:6:"height";s:3:"400";s:9:"layout_id";s:1:"6";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:0:"";}}', 1),
-(3051, 0, 'free', 'free_sort_order', '2', 0),
-(3050, 0, 'free', 'free_status', '0', 0),
-(3049, 0, 'free', 'free_geo_zone_id', '0', 0),
-(3048, 0, 'free', 'free_total', '', 0),
 (7168, 0, 'bestseller', 'bestseller_module', 'a:4:{i:0;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"209";s:12:"image_height";s:3:"209";s:9:"layout_id";s:1:"4";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:1;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"209";s:12:"image_height";s:3:"209";s:9:"layout_id";s:1:"2";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:2;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"209";s:12:"image_height";s:3:"209";s:9:"layout_id";s:1:"8";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:3;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"209";s:12:"image_height";s:3:"209";s:9:"layout_id";s:1:"7";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}}', 1),
 (6950, 0, 'latest', 'latest_module', 'a:3:{i:0;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"304";s:12:"image_height";s:3:"344";s:9:"layout_id";s:1:"4";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:1;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"304";s:12:"image_height";s:3:"344";s:9:"layout_id";s:1:"9";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:2;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"304";s:12:"image_height";s:3:"344";s:9:"layout_id";s:1:"2";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
 (6934, 0, 'manufacturer', 'manufacturer_module', 'a:1:{i:0;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"5";}}', 1),
 (7376, 0, 'newcarousel', 'newcarousel_module', 'a:1:{i:0;a:7:{s:9:"banner_id";s:2:"22";s:5:"width";s:3:"870";s:6:"height";s:3:"370";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}', 1),
 (6959, 0, 'featured', 'product', '', 0),
-(7647, 0, 'config', 'config_image_related_width', '170', 0),
-(7646, 0, 'config', 'config_image_additional_height', '70', 0),
-(7645, 0, 'config', 'config_image_additional_width', '70', 0),
-(7643, 0, 'config', 'config_image_product_width', '209', 0),
-(7644, 0, 'config', 'config_image_product_height', '209', 0),
-(7642, 0, 'config', 'config_image_popup_height', '600', 0),
-(7641, 0, 'config', 'config_image_popup_width', '600', 0),
-(7640, 0, 'config', 'config_image_thumb_height', '270', 0),
-(7639, 0, 'config', 'config_image_thumb_width', '270', 0),
-(7638, 0, 'config', 'config_image_category_height', '193', 0),
-(7637, 0, 'config', 'config_image_category_width', '193', 0),
-(7636, 0, 'config', 'config_icon', 'data/favicon.png', 0),
-(7635, 0, 'config', 'config_logo', 'data/logo.png', 0),
-(7634, 0, 'config', 'config_return_status_id', '2', 0),
-(7633, 0, 'config', 'config_return_id', '0', 0),
-(7632, 0, 'config', 'config_commission', '5', 0),
-(7631, 0, 'config', 'config_affiliate_id', '4', 0),
-(7630, 0, 'config', 'config_stock_status_id', '5', 0),
-(7629, 0, 'config', 'config_stock_checkout', '0', 0),
-(7628, 0, 'config', 'config_stock_warning', '0', 0),
-(7627, 0, 'config', 'config_stock_display', '0', 0),
-(7626, 0, 'config', 'config_complete_status_id', '5', 0),
-(7625, 0, 'config', 'config_order_status_id', '1', 0),
-(7624, 0, 'config', 'config_invoice_prefix', 'natural-2015', 0),
-(7623, 0, 'config', 'config_order_edit', '100', 0),
-(7622, 0, 'config', 'config_checkout_id', '5', 0),
-(7621, 0, 'config', 'config_guest_checkout', '0', 0),
-(7617, 0, 'config', 'config_customer_group_display', 'a:1:{i:0;s:1:"1";}', 1),
-(7618, 0, 'config', 'config_customer_price', '0', 0),
-(7619, 0, 'config', 'config_account_id', '3', 0),
+(7912, 0, 'config', 'config_image_related_height', '170', 0),
+(7911, 0, 'config', 'config_image_related_width', '170', 0),
+(7910, 0, 'config', 'config_image_additional_height', '70', 0),
+(7908, 0, 'config', 'config_image_product_height', '209', 0),
+(7909, 0, 'config', 'config_image_additional_width', '70', 0),
+(7907, 0, 'config', 'config_image_product_width', '209', 0),
+(7906, 0, 'config', 'config_image_popup_height', '600', 0),
+(7905, 0, 'config', 'config_image_popup_width', '600', 0),
+(7904, 0, 'config', 'config_image_thumb_height', '270', 0),
+(7903, 0, 'config', 'config_image_thumb_width', '270', 0),
+(7901, 0, 'config', 'config_image_category_width', '193', 0),
+(7902, 0, 'config', 'config_image_category_height', '193', 0),
+(7900, 0, 'config', 'config_icon', 'data/naturalstore/fav-natural.png', 0),
+(7899, 0, 'config', 'config_logo', 'data/logo.png', 0),
+(7898, 0, 'config', 'config_return_status_id', '2', 0),
+(7896, 0, 'config', 'config_commission', '5', 0),
+(7897, 0, 'config', 'config_return_id', '0', 0),
+(7895, 0, 'config', 'config_affiliate_id', '4', 0),
+(7894, 0, 'config', 'config_stock_status_id', '5', 0),
+(7893, 0, 'config', 'config_stock_checkout', '0', 0),
+(7892, 0, 'config', 'config_stock_warning', '0', 0),
+(7891, 0, 'config', 'config_stock_display', '0', 0),
+(7890, 0, 'config', 'config_complete_status_id', '5', 0),
+(7889, 0, 'config', 'config_order_status_id', '1', 0),
+(7882, 0, 'config', 'config_customer_price', '0', 0),
+(7883, 0, 'config', 'config_account_id', '3', 0),
+(7884, 0, 'config', 'config_cart_weight', '1', 0),
+(7885, 0, 'config', 'config_guest_checkout', '0', 0),
+(7886, 0, 'config', 'config_checkout_id', '5', 0),
+(7887, 0, 'config', 'config_order_edit', '100', 0),
 (6948, 0, 'category', 'category_module', 'a:11:{i:0;a:4:{s:9:"layout_id";s:1:"6";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:1;a:4:{s:9:"layout_id";s:2:"10";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:2;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:3;a:4:{s:9:"layout_id";s:1:"7";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:4;a:4:{s:9:"layout_id";s:1:"8";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:5;a:4:{s:9:"layout_id";s:1:"4";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:6;a:4:{s:9:"layout_id";s:1:"1";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:7;a:4:{s:9:"layout_id";s:2:"11";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:8;a:4:{s:9:"layout_id";s:1:"5";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:9;a:4:{s:9:"layout_id";s:1:"2";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:10;a:4:{s:9:"layout_id";s:1:"9";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}', 1),
 (6960, 0, 'featured', 'featured_product', '46,35,29,31,32,33', 0),
 (6961, 0, 'featured', 'featured_module', 'a:1:{i:0;a:7:{s:5:"limit";s:1:"6";s:11:"image_width";s:3:"209";s:12:"image_height";s:3:"209";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
-(7620, 0, 'config', 'config_cart_weight', '1', 0),
-(7611, 0, 'config', 'config_tax', '1', 0),
-(7612, 0, 'config', 'config_vat', '0', 0),
-(7613, 0, 'config', 'config_tax_default', 'shipping', 0),
-(7614, 0, 'config', 'config_tax_customer', 'shipping', 0),
-(7615, 0, 'config', 'config_customer_online', '0', 0),
-(7616, 0, 'config', 'config_customer_group_id', '1', 0),
-(7595, 0, 'config', 'config_layout_id', '4', 0),
-(7596, 0, 'config', 'config_country_id', '30', 0),
-(7597, 0, 'config', 'config_zone_id', '464', 0),
-(7598, 0, 'config', 'config_language', 'pt-br', 0),
-(7599, 0, 'config', 'config_admin_language', 'pt-br', 0),
-(7600, 0, 'config', 'config_currency', 'BRL', 0),
-(7601, 0, 'config', 'config_currency_auto', '1', 0),
-(7602, 0, 'config', 'config_length_class_id', '1', 0),
-(7603, 0, 'config', 'config_weight_class_id', '1', 0),
-(7604, 0, 'config', 'config_catalog_limit', '6', 0),
-(7605, 0, 'config', 'config_admin_limit', '20', 0),
-(7606, 0, 'config', 'config_product_count', '0', 0),
-(7607, 0, 'config', 'config_review_status', '0', 0),
-(7608, 0, 'config', 'config_download', '0', 0),
-(7609, 0, 'config', 'config_voucher_min', '1', 0),
-(7610, 0, 'config', 'config_voucher_max', '10000', 0),
-(7594, 0, 'config', 'config_template', 'theme442', 0),
-(7592, 0, 'config', 'config_title', 'Natural Store Limeira', 0),
-(7593, 0, 'config', 'config_meta_description', 'Natural Store Limeira', 0),
-(7590, 0, 'config', 'config_telephone', '(800)2345-6789', 0),
-(7591, 0, 'config', 'config_fax', '1-800-234-5678', 0),
-(7589, 0, 'config', 'config_email', 'fernando.mendes@webca.com.br', 0),
-(7588, 0, 'config', 'config_address', '8901 Marmora Road, Glasgow, D04 89GR', 0),
-(7587, 0, 'config', 'config_owner', 'Natural Store Limeira', 0),
-(7586, 0, 'config', 'config_name', 'Natural Store Limeira', 0),
-(7686, 0, 'config', 'config_error_log', '1', 0),
-(7687, 0, 'config', 'config_error_filename', 'error.txt', 0),
-(7688, 0, 'config', 'config_google_analytics', '', 0);
+(7888, 0, 'config', 'config_invoice_prefix', 'natural-2015', 0),
+(7881, 0, 'config', 'config_customer_group_display', 'a:1:{i:0;s:1:"1";}', 1),
+(7880, 0, 'config', 'config_customer_group_id', '1', 0),
+(7878, 0, 'config', 'config_tax_customer', 'shipping', 0),
+(7879, 0, 'config', 'config_customer_online', '0', 0),
+(7877, 0, 'config', 'config_tax_default', 'shipping', 0),
+(7876, 0, 'config', 'config_vat', '0', 0),
+(7875, 0, 'config', 'config_tax', '1', 0),
+(7874, 0, 'config', 'config_voucher_max', '10000', 0),
+(7873, 0, 'config', 'config_voucher_min', '1', 0),
+(7872, 0, 'config', 'config_download', '0', 0),
+(7871, 0, 'config', 'config_review_status', '0', 0),
+(7870, 0, 'config', 'config_product_count', '0', 0),
+(7869, 0, 'config', 'config_admin_limit', '20', 0),
+(7868, 0, 'config', 'config_catalog_limit', '6', 0),
+(7867, 0, 'config', 'config_weight_class_id', '1', 0),
+(7866, 0, 'config', 'config_length_class_id', '1', 0),
+(7865, 0, 'config', 'config_currency_auto', '1', 0),
+(7864, 0, 'config', 'config_currency', 'BRL', 0),
+(7863, 0, 'config', 'config_admin_language', 'pt-br', 0),
+(7862, 0, 'config', 'config_language', 'pt-br', 0),
+(7861, 0, 'config', 'config_zone_id', '464', 0),
+(7860, 0, 'config', 'config_country_id', '30', 0),
+(7859, 0, 'config', 'config_layout_id', '4', 0),
+(7858, 0, 'config', 'config_template', 'theme442', 0),
+(7857, 0, 'config', 'config_meta_description', 'Natural Store Limeira', 0),
+(7856, 0, 'config', 'config_title', 'Natural Store Limeira', 0),
+(7853, 0, 'config', 'config_email', 'fernando.mendes@webca.com.br', 0),
+(7855, 0, 'config', 'config_fax', '', 0),
+(7854, 0, 'config', 'config_telephone', '(19) 3033-3389', 0),
+(7851, 0, 'config', 'config_owner', 'Natural Store Limeira', 0),
+(7852, 0, 'config', 'config_address', '8901 Marmora Road, Glasgow, D04 89GR', 0),
+(7850, 0, 'config', 'config_name', 'Natural Store Limeira', 0),
+(7962, 0, 'correios', 'correios_adicional', '15', 0),
+(7961, 0, 'correios', 'correios_declarar_valor', 'n', 0),
+(7960, 0, 'correios', 'correios_aviso_recebimento', 'n', 0),
+(7959, 0, 'correios', 'correios_mao_propria', 'n', 0),
+(7958, 0, 'correios', 'correios_contrato_senha', '', 0),
+(7957, 0, 'correios', 'correios_contrato_codigo', '', 0),
+(7956, 0, 'correios', 'correios_41106', '1', 0),
+(7955, 0, 'correios', 'correios_40215', '1', 0),
+(7954, 0, 'correios', 'correios_40010', '1', 0),
+(7953, 0, 'correios', 'correios_postcode', '13480-011', 0),
+(7969, 0, 'cielo', 'cielo_status', '0', 0),
+(7970, 0, 'cielo', 'cielo_sort_order', '', 0),
+(7737, 0, 'pagseguro', 'pagseguro_order_analise', '23', 0),
+(7736, 0, 'pagseguro', 'pagseguro_order_aguardando_pagamento', '22', 0),
+(7735, 0, 'pagseguro', 'pagseguro_order_aguardando_retorno', '21', 0),
+(7734, 0, 'pagseguro', 'pagseguro_tipo_frete', '0', 0),
+(7733, 0, 'pagseguro', 'pagseguro_posfixo', '', 0),
+(7732, 0, 'pagseguro', 'pagseguro_total', '', 0),
+(7731, 0, 'pagseguro', 'pagseguro_email', 'dwdwdw', 0),
+(7730, 0, 'pagseguro', 'pagseguro_token', '11', 0),
+(7968, 0, 'cielo', 'cielo_config', 'a:10:{s:7:"sandbox";b:1;s:15:"estabelecimento";s:0:"";s:5:"chave";s:0:"";s:8:"buy_page";s:5:"cielo";s:17:"exibicao_checkout";s:3:"img";s:15:"soft_descriptor";s:0:"";s:9:"operacoes";a:10:{s:13:"visa_electron";a:13:{s:5:"ativo";s:1:"0";s:4:"nome";s:13:"Visa Electron";s:12:"valor_minimo";s:1:"5";s:11:"parc_minima";s:1:"5";s:8:"desconto";s:1:"0";s:11:"max_parc_sj";s:1:"0";s:11:"max_parc_jl";s:1:"0";s:8:"max_parc";s:1:"1";s:10:"juros_loja";s:1:"0";s:13:"auto_capturar";s:1:"1";s:11:"autorizacao";s:1:"1";s:6:"codigo";s:4:"visa";s:4:"tipo";s:6:"debito";}s:8:"redeshop";a:13:{s:5:"ativo";s:1:"0";s:4:"nome";s:16:"Redeshop/Maestro";s:12:"valor_minimo";s:1:"5";s:11:"parc_minima";s:1:"5";s:8:"desconto";s:1:"0";s:11:"max_parc_sj";s:1:"0";s:11:"max_parc_jl";s:1:"0";s:8:"max_parc";s:1:"1";s:10:"juros_loja";s:1:"0";s:13:"auto_capturar";s:1:"1";s:11:"autorizacao";s:1:"1";s:6:"codigo";s:10:"mastercard";s:4:"tipo";s:6:"debito";}s:4:"visa";a:13:{s:5:"ativo";s:1:"0";s:4:"nome";s:4:"Visa";s:12:"valor_minimo";s:1:"5";s:11:"parc_minima";s:1:"5";s:8:"desconto";s:1:"0";s:11:"max_parc_sj";s:1:"0";s:11:"max_parc_jl";s:1:"0";s:8:"max_parc";s:1:"1";s:10:"juros_loja";s:1:"0";s:13:"auto_capturar";s:1:"0";s:11:"autorizacao";s:1:"3";s:6:"codigo";s:4:"visa";s:4:"tipo";s:7:"credito";}s:10:"mastercard";a:13:{s:5:"ativo";s:1:"0";s:4:"nome";s:10:"Mastercard";s:12:"valor_minimo";s:1:"5";s:11:"parc_minima";s:1:"5";s:8:"desconto";s:1:"0";s:11:"max_parc_sj";s:1:"0";s:11:"max_parc_jl";s:1:"0";s:8:"max_parc";s:1:"1";s:10:"juros_loja";s:1:"0";s:13:"auto_capturar";s:1:"0";s:11:"autorizacao";s:1:"3";s:6:"codigo";s:10:"mastercard";s:4:"tipo";s:7:"credito";}s:6:"diners";a:13:{s:5:"ativo";s:1:"0";s:4:"nome";s:11:"Diners Club";s:12:"valor_minimo";s:1:"5";s:11:"parc_minima";s:1:"5";s:8:"desconto";s:1:"0";s:11:"max_parc_sj";s:1:"0";s:11:"max_parc_jl";s:1:"0";s:8:"max_parc";s:1:"1";s:10:"juros_loja";s:1:"0";s:13:"auto_capturar";s:1:"0";s:11:"autorizacao";s:1:"3";s:6:"codigo";s:6:"diners";s:4:"tipo";s:7:"credito";}s:4:"amex";a:13:{s:5:"ativo";s:1:"0";s:4:"nome";s:16:"American Express";s:12:"valor_minimo";s:1:"5";s:11:"parc_minima";s:1:"5";s:8:"desconto";s:1:"0";s:11:"max_parc_sj";s:1:"0";s:11:"max_parc_jl";s:1:"0";s:8:"max_parc";s:1:"1";s:10:"juros_loja";s:1:"0";s:13:"auto_capturar";s:1:"0";s:11:"autorizacao";s:1:"3";s:6:"codigo";s:4:"amex";s:4:"tipo";s:7:"credito";}s:3:"elo";a:13:{s:5:"ativo";s:1:"0";s:4:"nome";s:3:"Elo";s:12:"valor_minimo";s:1:"5";s:11:"parc_minima";s:1:"5";s:8:"desconto";s:1:"0";s:11:"max_parc_sj";s:1:"0";s:11:"max_parc_jl";s:1:"0";s:8:"max_parc";s:1:"1";s:10:"juros_loja";s:1:"0";s:13:"auto_capturar";s:1:"0";s:11:"autorizacao";s:1:"3";s:6:"codigo";s:3:"elo";s:4:"tipo";s:7:"credito";}s:8:"discover";a:13:{s:5:"ativo";s:1:"0";s:4:"nome";s:8:"Discover";s:12:"valor_minimo";s:1:"5";s:11:"parc_minima";s:1:"5";s:8:"desconto";s:1:"0";s:11:"max_parc_sj";s:1:"0";s:11:"max_parc_jl";s:1:"0";s:8:"max_parc";s:1:"1";s:10:"juros_loja";s:1:"0";s:13:"auto_capturar";s:1:"0";s:11:"autorizacao";s:1:"3";s:6:"codigo";s:8:"discover";s:4:"tipo";s:7:"credito";}s:3:"jcb";a:13:{s:5:"ativo";s:1:"0";s:4:"nome";s:3:"JCB";s:12:"valor_minimo";s:1:"5";s:11:"parc_minima";s:1:"5";s:8:"desconto";s:1:"0";s:11:"max_parc_sj";s:1:"0";s:11:"max_parc_jl";s:1:"0";s:8:"max_parc";s:1:"1";s:10:"juros_loja";s:1:"0";s:13:"auto_capturar";s:1:"0";s:11:"autorizacao";s:1:"3";s:6:"codigo";s:3:"jcb";s:4:"tipo";s:7:"credito";}s:4:"aura";a:13:{s:5:"ativo";s:1:"0";s:4:"nome";s:4:"Aura";s:12:"valor_minimo";s:1:"5";s:11:"parc_minima";s:1:"5";s:8:"desconto";s:1:"0";s:11:"max_parc_sj";s:1:"0";s:11:"max_parc_jl";s:1:"0";s:8:"max_parc";s:1:"1";s:10:"juros_loja";s:1:"0";s:13:"auto_capturar";s:1:"0";s:11:"autorizacao";s:1:"3";s:6:"codigo";s:4:"aura";s:4:"tipo";s:7:"credito";}}s:13:"status_pedido";a:5:{s:8:"pendente";s:2:"22";s:14:"erro_sem_retry";s:2:"17";s:14:"erro_com_retry";s:2:"18";s:19:"sucesso_sem_captura";s:2:"19";s:19:"sucesso_com_captura";s:2:"20";}s:11:"geo_zone_id";s:1:"0";s:7:"version";s:3:"2.0";}', 1),
+(7743, 0, 'pagseguro', 'pagseguro_update_status_alert', '0', 0),
+(7744, 0, 'pagseguro', 'pagseguro_geo_zone_id', '0', 0),
+(7745, 0, 'pagseguro', 'pagseguro_status', '1', 0),
+(7746, 0, 'pagseguro', 'pagseguro_sort_order', '', 0),
+(7965, 0, 'correios', 'correios_geo_zone_id', '0', 0),
+(7966, 0, 'correios', 'correios_status', '1', 0),
+(7967, 0, 'correios', 'correios_sort_order', '0', 0);
 
 -- --------------------------------------------------------
 
@@ -3174,7 +3159,7 @@ CREATE TABLE `oc_url_alias` (
 `url_alias_id` int(11) NOT NULL,
   `query` varchar(255) NOT NULL,
   `keyword` varchar(255) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=815 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=834 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_url_alias`
@@ -3182,14 +3167,27 @@ CREATE TABLE `oc_url_alias` (
 
 INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (811, 'product_id=48', 'Aromatherapy'),
-(807, 'category_id=20', 'Body'),
-(503, 'category_id=26', 'Bath'),
-(505, 'category_id=27', 'Diet'),
+(818, 'category_id=82', 'capsulas'),
+(819, 'category_id=83', 'organicos'),
 (790, 'manufacturer_id=8', 'Nutrition'),
-(814, 'information_id=4', 'Minerals'),
+(815, 'information_id=4', 'Minerals'),
 (812, 'product_id=42', 'Health'),
 (767, 'category_id=34', 'Tea'),
-(813, 'category_id=36', 'Vitamins');
+(817, 'category_id=81', 'naturais'),
+(820, 'category_id=84', 'geleias'),
+(821, 'category_id=85', 'chas'),
+(822, 'category_id=86', 'emagrecedores'),
+(823, 'category_id=87', 'veganos-vegetarianos'),
+(824, 'category_id=88', 'diet-e-light'),
+(825, 'category_id=89', 'bio-florais'),
+(826, 'category_id=90', 'farinaceos'),
+(827, 'category_id=91', 'graos-e-sementes'),
+(828, 'category_id=92', 'granolas'),
+(829, 'category_id=93', 'mel-e-derivados'),
+(830, 'category_id=94', 'chocolates'),
+(831, 'category_id=95', 'barras-de-cereais'),
+(832, 'category_id=96', 'congelados'),
+(833, 'category_id=97', 'sem-gluten');
 
 -- --------------------------------------------------------
 
@@ -3236,7 +3234,7 @@ CREATE TABLE `oc_user_group` (
 --
 
 INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
-(1, 'Top Administrator', 'a:2:{s:6:"access";a:156:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:15:"catalog/profile";i:10;s:14:"catalog/review";i:11;s:18:"common/filemanager";i:12;s:13:"design/banner";i:13;s:19:"design/custom_field";i:14;s:13:"design/layout";i:15;s:14:"extension/feed";i:16;s:17:"extension/manager";i:17;s:16:"extension/module";i:18;s:17:"extension/openbay";i:19;s:17:"extension/payment";i:20;s:18:"extension/shipping";i:21;s:15:"extension/total";i:22;s:16:"feed/google_base";i:23;s:19:"feed/google_sitemap";i:24;s:20:"localisation/country";i:25;s:21:"localisation/currency";i:26;s:21:"localisation/geo_zone";i:27;s:21:"localisation/language";i:28;s:25:"localisation/length_class";i:29;s:25:"localisation/order_status";i:30;s:26:"localisation/return_action";i:31;s:26:"localisation/return_reason";i:32;s:26:"localisation/return_status";i:33;s:25:"localisation/stock_status";i:34;s:22:"localisation/tax_class";i:35;s:21:"localisation/tax_rate";i:36;s:25:"localisation/weight_class";i:37;s:17:"localisation/zone";i:38;s:14:"module/account";i:39;s:16:"module/affiliate";i:40;s:29:"module/amazon_checkout_layout";i:41;s:13:"module/banner";i:42;s:17:"module/bestseller";i:43;s:15:"module/carousel";i:44;s:15:"module/category";i:45;s:18:"module/ebaydisplay";i:46;s:15:"module/featured";i:47;s:13:"module/filter";i:48;s:18:"module/google_talk";i:49;s:18:"module/information";i:50;s:13:"module/latest";i:51;s:17:"module/openbaypro";i:52;s:16:"module/pp_layout";i:53;s:16:"module/slideshow";i:54;s:14:"module/special";i:55;s:12:"module/store";i:56;s:14:"module/welcome";i:57;s:14:"openbay/amazon";i:58;s:22:"openbay/amazon_listing";i:59;s:22:"openbay/amazon_product";i:60;s:16:"openbay/amazonus";i:61;s:24:"openbay/amazonus_listing";i:62;s:24:"openbay/amazonus_product";i:63;s:20:"openbay/ebay_profile";i:64;s:21:"openbay/ebay_template";i:65;s:15:"openbay/openbay";i:66;s:23:"payment/amazon_checkout";i:67;s:24:"payment/authorizenet_aim";i:68;s:21:"payment/bank_transfer";i:69;s:14:"payment/cheque";i:70;s:11:"payment/cod";i:71;s:21:"payment/free_checkout";i:72;s:22:"payment/klarna_account";i:73;s:22:"payment/klarna_invoice";i:74;s:14:"payment/liqpay";i:75;s:20:"payment/moneybookers";i:76;s:14:"payment/nochex";i:77;s:15:"payment/paymate";i:78;s:16:"payment/paypoint";i:79;s:13:"payment/payza";i:80;s:26:"payment/perpetual_payments";i:81;s:18:"payment/pp_express";i:82;s:25:"payment/pp_payflow_iframe";i:83;s:14:"payment/pp_pro";i:84;s:21:"payment/pp_pro_iframe";i:85;s:17:"payment/pp_pro_pf";i:86;s:17:"payment/pp_pro_uk";i:87;s:19:"payment/pp_standard";i:88;s:15:"payment/sagepay";i:89;s:22:"payment/sagepay_direct";i:90;s:18:"payment/sagepay_us";i:91;s:19:"payment/twocheckout";i:92;s:28:"payment/web_payment_software";i:93;s:16:"payment/worldpay";i:94;s:27:"report/affiliate_commission";i:95;s:22:"report/customer_credit";i:96;s:22:"report/customer_online";i:97;s:21:"report/customer_order";i:98;s:22:"report/customer_reward";i:99;s:24:"report/product_purchased";i:100;s:21:"report/product_viewed";i:101;s:18:"report/sale_coupon";i:102;s:17:"report/sale_order";i:103;s:18:"report/sale_return";i:104;s:20:"report/sale_shipping";i:105;s:15:"report/sale_tax";i:106;s:14:"sale/affiliate";i:107;s:12:"sale/contact";i:108;s:11:"sale/coupon";i:109;s:13:"sale/customer";i:110;s:20:"sale/customer_ban_ip";i:111;s:19:"sale/customer_group";i:112;s:10:"sale/order";i:113;s:14:"sale/recurring";i:114;s:11:"sale/return";i:115;s:12:"sale/voucher";i:116;s:18:"sale/voucher_theme";i:117;s:15:"setting/setting";i:118;s:13:"setting/store";i:119;s:16:"shipping/auspost";i:120;s:17:"shipping/citylink";i:121;s:14:"shipping/fedex";i:122;s:13:"shipping/flat";i:123;s:13:"shipping/free";i:124;s:13:"shipping/item";i:125;s:23:"shipping/parcelforce_48";i:126;s:15:"shipping/pickup";i:127;s:19:"shipping/royal_mail";i:128;s:12:"shipping/ups";i:129;s:13:"shipping/usps";i:130;s:15:"shipping/weight";i:131;s:11:"tool/backup";i:132;s:14:"tool/error_log";i:133;s:12:"total/coupon";i:134;s:12:"total/credit";i:135;s:14:"total/handling";i:136;s:16:"total/klarna_fee";i:137;s:19:"total/low_order_fee";i:138;s:12:"total/reward";i:139;s:14:"total/shipping";i:140;s:15:"total/sub_total";i:141;s:9:"total/tax";i:142;s:11:"total/total";i:143;s:13:"total/voucher";i:144;s:9:"user/user";i:145;s:20:"user/user_permission";i:146;s:14:"module/welcome";i:147;s:18:"module/newcarousel";i:148;s:14:"module/compare";i:149;s:20:"module/vqmod_manager";i:150;s:18:"module/ebaydisplay";i:151;s:14:"module/welcome";i:152;s:18:"module/google_talk";i:153;s:19:"module/manufacturer";i:154;s:18:"module/newcarousel";i:155;s:15:"module/category";}s:6:"modify";a:156:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:15:"catalog/profile";i:10;s:14:"catalog/review";i:11;s:18:"common/filemanager";i:12;s:13:"design/banner";i:13;s:19:"design/custom_field";i:14;s:13:"design/layout";i:15;s:14:"extension/feed";i:16;s:17:"extension/manager";i:17;s:16:"extension/module";i:18;s:17:"extension/openbay";i:19;s:17:"extension/payment";i:20;s:18:"extension/shipping";i:21;s:15:"extension/total";i:22;s:16:"feed/google_base";i:23;s:19:"feed/google_sitemap";i:24;s:20:"localisation/country";i:25;s:21:"localisation/currency";i:26;s:21:"localisation/geo_zone";i:27;s:21:"localisation/language";i:28;s:25:"localisation/length_class";i:29;s:25:"localisation/order_status";i:30;s:26:"localisation/return_action";i:31;s:26:"localisation/return_reason";i:32;s:26:"localisation/return_status";i:33;s:25:"localisation/stock_status";i:34;s:22:"localisation/tax_class";i:35;s:21:"localisation/tax_rate";i:36;s:25:"localisation/weight_class";i:37;s:17:"localisation/zone";i:38;s:14:"module/account";i:39;s:16:"module/affiliate";i:40;s:29:"module/amazon_checkout_layout";i:41;s:13:"module/banner";i:42;s:17:"module/bestseller";i:43;s:15:"module/carousel";i:44;s:15:"module/category";i:45;s:18:"module/ebaydisplay";i:46;s:15:"module/featured";i:47;s:13:"module/filter";i:48;s:18:"module/google_talk";i:49;s:18:"module/information";i:50;s:13:"module/latest";i:51;s:17:"module/openbaypro";i:52;s:16:"module/pp_layout";i:53;s:16:"module/slideshow";i:54;s:14:"module/special";i:55;s:12:"module/store";i:56;s:14:"module/welcome";i:57;s:14:"openbay/amazon";i:58;s:22:"openbay/amazon_listing";i:59;s:22:"openbay/amazon_product";i:60;s:16:"openbay/amazonus";i:61;s:24:"openbay/amazonus_listing";i:62;s:24:"openbay/amazonus_product";i:63;s:20:"openbay/ebay_profile";i:64;s:21:"openbay/ebay_template";i:65;s:15:"openbay/openbay";i:66;s:23:"payment/amazon_checkout";i:67;s:24:"payment/authorizenet_aim";i:68;s:21:"payment/bank_transfer";i:69;s:14:"payment/cheque";i:70;s:11:"payment/cod";i:71;s:21:"payment/free_checkout";i:72;s:22:"payment/klarna_account";i:73;s:22:"payment/klarna_invoice";i:74;s:14:"payment/liqpay";i:75;s:20:"payment/moneybookers";i:76;s:14:"payment/nochex";i:77;s:15:"payment/paymate";i:78;s:16:"payment/paypoint";i:79;s:13:"payment/payza";i:80;s:26:"payment/perpetual_payments";i:81;s:18:"payment/pp_express";i:82;s:25:"payment/pp_payflow_iframe";i:83;s:14:"payment/pp_pro";i:84;s:21:"payment/pp_pro_iframe";i:85;s:17:"payment/pp_pro_pf";i:86;s:17:"payment/pp_pro_uk";i:87;s:19:"payment/pp_standard";i:88;s:15:"payment/sagepay";i:89;s:22:"payment/sagepay_direct";i:90;s:18:"payment/sagepay_us";i:91;s:19:"payment/twocheckout";i:92;s:28:"payment/web_payment_software";i:93;s:16:"payment/worldpay";i:94;s:27:"report/affiliate_commission";i:95;s:22:"report/customer_credit";i:96;s:22:"report/customer_online";i:97;s:21:"report/customer_order";i:98;s:22:"report/customer_reward";i:99;s:24:"report/product_purchased";i:100;s:21:"report/product_viewed";i:101;s:18:"report/sale_coupon";i:102;s:17:"report/sale_order";i:103;s:18:"report/sale_return";i:104;s:20:"report/sale_shipping";i:105;s:15:"report/sale_tax";i:106;s:14:"sale/affiliate";i:107;s:12:"sale/contact";i:108;s:11:"sale/coupon";i:109;s:13:"sale/customer";i:110;s:20:"sale/customer_ban_ip";i:111;s:19:"sale/customer_group";i:112;s:10:"sale/order";i:113;s:14:"sale/recurring";i:114;s:11:"sale/return";i:115;s:12:"sale/voucher";i:116;s:18:"sale/voucher_theme";i:117;s:15:"setting/setting";i:118;s:13:"setting/store";i:119;s:16:"shipping/auspost";i:120;s:17:"shipping/citylink";i:121;s:14:"shipping/fedex";i:122;s:13:"shipping/flat";i:123;s:13:"shipping/free";i:124;s:13:"shipping/item";i:125;s:23:"shipping/parcelforce_48";i:126;s:15:"shipping/pickup";i:127;s:19:"shipping/royal_mail";i:128;s:12:"shipping/ups";i:129;s:13:"shipping/usps";i:130;s:15:"shipping/weight";i:131;s:11:"tool/backup";i:132;s:14:"tool/error_log";i:133;s:12:"total/coupon";i:134;s:12:"total/credit";i:135;s:14:"total/handling";i:136;s:16:"total/klarna_fee";i:137;s:19:"total/low_order_fee";i:138;s:12:"total/reward";i:139;s:14:"total/shipping";i:140;s:15:"total/sub_total";i:141;s:9:"total/tax";i:142;s:11:"total/total";i:143;s:13:"total/voucher";i:144;s:9:"user/user";i:145;s:20:"user/user_permission";i:146;s:14:"module/welcome";i:147;s:18:"module/newcarousel";i:148;s:14:"module/compare";i:149;s:20:"module/vqmod_manager";i:150;s:18:"module/ebaydisplay";i:151;s:14:"module/welcome";i:152;s:18:"module/google_talk";i:153;s:19:"module/manufacturer";i:154;s:18:"module/newcarousel";i:155;s:15:"module/category";}}'),
+(1, 'Top Administrator', 'a:2:{s:6:"access";a:159:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:15:"catalog/profile";i:10;s:14:"catalog/review";i:11;s:18:"common/filemanager";i:12;s:13:"design/banner";i:13;s:19:"design/custom_field";i:14;s:13:"design/layout";i:15;s:14:"extension/feed";i:16;s:17:"extension/manager";i:17;s:16:"extension/module";i:18;s:17:"extension/openbay";i:19;s:17:"extension/payment";i:20;s:18:"extension/shipping";i:21;s:15:"extension/total";i:22;s:16:"feed/google_base";i:23;s:19:"feed/google_sitemap";i:24;s:20:"localisation/country";i:25;s:21:"localisation/currency";i:26;s:21:"localisation/geo_zone";i:27;s:21:"localisation/language";i:28;s:25:"localisation/length_class";i:29;s:25:"localisation/order_status";i:30;s:26:"localisation/return_action";i:31;s:26:"localisation/return_reason";i:32;s:26:"localisation/return_status";i:33;s:25:"localisation/stock_status";i:34;s:22:"localisation/tax_class";i:35;s:21:"localisation/tax_rate";i:36;s:25:"localisation/weight_class";i:37;s:17:"localisation/zone";i:38;s:14:"module/account";i:39;s:16:"module/affiliate";i:40;s:29:"module/amazon_checkout_layout";i:41;s:13:"module/banner";i:42;s:17:"module/bestseller";i:43;s:15:"module/carousel";i:44;s:15:"module/category";i:45;s:18:"module/ebaydisplay";i:46;s:15:"module/featured";i:47;s:13:"module/filter";i:48;s:18:"module/google_talk";i:49;s:18:"module/information";i:50;s:13:"module/latest";i:51;s:17:"module/openbaypro";i:52;s:16:"module/pp_layout";i:53;s:16:"module/slideshow";i:54;s:14:"module/special";i:55;s:12:"module/store";i:56;s:14:"module/welcome";i:57;s:14:"openbay/amazon";i:58;s:22:"openbay/amazon_listing";i:59;s:22:"openbay/amazon_product";i:60;s:16:"openbay/amazonus";i:61;s:24:"openbay/amazonus_listing";i:62;s:24:"openbay/amazonus_product";i:63;s:20:"openbay/ebay_profile";i:64;s:21:"openbay/ebay_template";i:65;s:15:"openbay/openbay";i:66;s:23:"payment/amazon_checkout";i:67;s:24:"payment/authorizenet_aim";i:68;s:21:"payment/bank_transfer";i:69;s:14:"payment/cheque";i:70;s:11:"payment/cod";i:71;s:21:"payment/free_checkout";i:72;s:22:"payment/klarna_account";i:73;s:22:"payment/klarna_invoice";i:74;s:14:"payment/liqpay";i:75;s:20:"payment/moneybookers";i:76;s:14:"payment/nochex";i:77;s:15:"payment/paymate";i:78;s:16:"payment/paypoint";i:79;s:13:"payment/payza";i:80;s:26:"payment/perpetual_payments";i:81;s:18:"payment/pp_express";i:82;s:25:"payment/pp_payflow_iframe";i:83;s:14:"payment/pp_pro";i:84;s:21:"payment/pp_pro_iframe";i:85;s:17:"payment/pp_pro_pf";i:86;s:17:"payment/pp_pro_uk";i:87;s:19:"payment/pp_standard";i:88;s:15:"payment/sagepay";i:89;s:22:"payment/sagepay_direct";i:90;s:18:"payment/sagepay_us";i:91;s:19:"payment/twocheckout";i:92;s:28:"payment/web_payment_software";i:93;s:16:"payment/worldpay";i:94;s:27:"report/affiliate_commission";i:95;s:22:"report/customer_credit";i:96;s:22:"report/customer_online";i:97;s:21:"report/customer_order";i:98;s:22:"report/customer_reward";i:99;s:24:"report/product_purchased";i:100;s:21:"report/product_viewed";i:101;s:18:"report/sale_coupon";i:102;s:17:"report/sale_order";i:103;s:18:"report/sale_return";i:104;s:20:"report/sale_shipping";i:105;s:15:"report/sale_tax";i:106;s:14:"sale/affiliate";i:107;s:12:"sale/contact";i:108;s:11:"sale/coupon";i:109;s:13:"sale/customer";i:110;s:20:"sale/customer_ban_ip";i:111;s:19:"sale/customer_group";i:112;s:10:"sale/order";i:113;s:14:"sale/recurring";i:114;s:11:"sale/return";i:115;s:12:"sale/voucher";i:116;s:18:"sale/voucher_theme";i:117;s:15:"setting/setting";i:118;s:13:"setting/store";i:119;s:16:"shipping/auspost";i:120;s:17:"shipping/citylink";i:121;s:14:"shipping/fedex";i:122;s:13:"shipping/flat";i:123;s:13:"shipping/free";i:124;s:13:"shipping/item";i:125;s:23:"shipping/parcelforce_48";i:126;s:15:"shipping/pickup";i:127;s:19:"shipping/royal_mail";i:128;s:12:"shipping/ups";i:129;s:13:"shipping/usps";i:130;s:15:"shipping/weight";i:131;s:11:"tool/backup";i:132;s:14:"tool/error_log";i:133;s:12:"total/coupon";i:134;s:12:"total/credit";i:135;s:14:"total/handling";i:136;s:16:"total/klarna_fee";i:137;s:19:"total/low_order_fee";i:138;s:12:"total/reward";i:139;s:14:"total/shipping";i:140;s:15:"total/sub_total";i:141;s:9:"total/tax";i:142;s:11:"total/total";i:143;s:13:"total/voucher";i:144;s:9:"user/user";i:145;s:20:"user/user_permission";i:146;s:14:"module/welcome";i:147;s:18:"module/newcarousel";i:148;s:14:"module/compare";i:149;s:20:"module/vqmod_manager";i:150;s:18:"module/ebaydisplay";i:151;s:14:"module/welcome";i:152;s:18:"module/google_talk";i:153;s:19:"module/manufacturer";i:154;s:18:"module/newcarousel";i:155;s:15:"module/category";i:156;s:17:"shipping/correios";i:157;s:17:"payment/pagseguro";i:158;s:13:"payment/cielo";}s:6:"modify";a:159:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:15:"catalog/profile";i:10;s:14:"catalog/review";i:11;s:18:"common/filemanager";i:12;s:13:"design/banner";i:13;s:19:"design/custom_field";i:14;s:13:"design/layout";i:15;s:14:"extension/feed";i:16;s:17:"extension/manager";i:17;s:16:"extension/module";i:18;s:17:"extension/openbay";i:19;s:17:"extension/payment";i:20;s:18:"extension/shipping";i:21;s:15:"extension/total";i:22;s:16:"feed/google_base";i:23;s:19:"feed/google_sitemap";i:24;s:20:"localisation/country";i:25;s:21:"localisation/currency";i:26;s:21:"localisation/geo_zone";i:27;s:21:"localisation/language";i:28;s:25:"localisation/length_class";i:29;s:25:"localisation/order_status";i:30;s:26:"localisation/return_action";i:31;s:26:"localisation/return_reason";i:32;s:26:"localisation/return_status";i:33;s:25:"localisation/stock_status";i:34;s:22:"localisation/tax_class";i:35;s:21:"localisation/tax_rate";i:36;s:25:"localisation/weight_class";i:37;s:17:"localisation/zone";i:38;s:14:"module/account";i:39;s:16:"module/affiliate";i:40;s:29:"module/amazon_checkout_layout";i:41;s:13:"module/banner";i:42;s:17:"module/bestseller";i:43;s:15:"module/carousel";i:44;s:15:"module/category";i:45;s:18:"module/ebaydisplay";i:46;s:15:"module/featured";i:47;s:13:"module/filter";i:48;s:18:"module/google_talk";i:49;s:18:"module/information";i:50;s:13:"module/latest";i:51;s:17:"module/openbaypro";i:52;s:16:"module/pp_layout";i:53;s:16:"module/slideshow";i:54;s:14:"module/special";i:55;s:12:"module/store";i:56;s:14:"module/welcome";i:57;s:14:"openbay/amazon";i:58;s:22:"openbay/amazon_listing";i:59;s:22:"openbay/amazon_product";i:60;s:16:"openbay/amazonus";i:61;s:24:"openbay/amazonus_listing";i:62;s:24:"openbay/amazonus_product";i:63;s:20:"openbay/ebay_profile";i:64;s:21:"openbay/ebay_template";i:65;s:15:"openbay/openbay";i:66;s:23:"payment/amazon_checkout";i:67;s:24:"payment/authorizenet_aim";i:68;s:21:"payment/bank_transfer";i:69;s:14:"payment/cheque";i:70;s:11:"payment/cod";i:71;s:21:"payment/free_checkout";i:72;s:22:"payment/klarna_account";i:73;s:22:"payment/klarna_invoice";i:74;s:14:"payment/liqpay";i:75;s:20:"payment/moneybookers";i:76;s:14:"payment/nochex";i:77;s:15:"payment/paymate";i:78;s:16:"payment/paypoint";i:79;s:13:"payment/payza";i:80;s:26:"payment/perpetual_payments";i:81;s:18:"payment/pp_express";i:82;s:25:"payment/pp_payflow_iframe";i:83;s:14:"payment/pp_pro";i:84;s:21:"payment/pp_pro_iframe";i:85;s:17:"payment/pp_pro_pf";i:86;s:17:"payment/pp_pro_uk";i:87;s:19:"payment/pp_standard";i:88;s:15:"payment/sagepay";i:89;s:22:"payment/sagepay_direct";i:90;s:18:"payment/sagepay_us";i:91;s:19:"payment/twocheckout";i:92;s:28:"payment/web_payment_software";i:93;s:16:"payment/worldpay";i:94;s:27:"report/affiliate_commission";i:95;s:22:"report/customer_credit";i:96;s:22:"report/customer_online";i:97;s:21:"report/customer_order";i:98;s:22:"report/customer_reward";i:99;s:24:"report/product_purchased";i:100;s:21:"report/product_viewed";i:101;s:18:"report/sale_coupon";i:102;s:17:"report/sale_order";i:103;s:18:"report/sale_return";i:104;s:20:"report/sale_shipping";i:105;s:15:"report/sale_tax";i:106;s:14:"sale/affiliate";i:107;s:12:"sale/contact";i:108;s:11:"sale/coupon";i:109;s:13:"sale/customer";i:110;s:20:"sale/customer_ban_ip";i:111;s:19:"sale/customer_group";i:112;s:10:"sale/order";i:113;s:14:"sale/recurring";i:114;s:11:"sale/return";i:115;s:12:"sale/voucher";i:116;s:18:"sale/voucher_theme";i:117;s:15:"setting/setting";i:118;s:13:"setting/store";i:119;s:16:"shipping/auspost";i:120;s:17:"shipping/citylink";i:121;s:14:"shipping/fedex";i:122;s:13:"shipping/flat";i:123;s:13:"shipping/free";i:124;s:13:"shipping/item";i:125;s:23:"shipping/parcelforce_48";i:126;s:15:"shipping/pickup";i:127;s:19:"shipping/royal_mail";i:128;s:12:"shipping/ups";i:129;s:13:"shipping/usps";i:130;s:15:"shipping/weight";i:131;s:11:"tool/backup";i:132;s:14:"tool/error_log";i:133;s:12:"total/coupon";i:134;s:12:"total/credit";i:135;s:14:"total/handling";i:136;s:16:"total/klarna_fee";i:137;s:19:"total/low_order_fee";i:138;s:12:"total/reward";i:139;s:14:"total/shipping";i:140;s:15:"total/sub_total";i:141;s:9:"total/tax";i:142;s:11:"total/total";i:143;s:13:"total/voucher";i:144;s:9:"user/user";i:145;s:20:"user/user_permission";i:146;s:14:"module/welcome";i:147;s:18:"module/newcarousel";i:148;s:14:"module/compare";i:149;s:20:"module/vqmod_manager";i:150;s:18:"module/ebaydisplay";i:151;s:14:"module/welcome";i:152;s:18:"module/google_talk";i:153;s:19:"module/manufacturer";i:154;s:18:"module/newcarousel";i:155;s:15:"module/category";i:156;s:17:"shipping/correios";i:157;s:17:"payment/pagseguro";i:158;s:13:"payment/cielo";}}'),
 (10, 'Demonstration', '');
 
 -- --------------------------------------------------------
@@ -7658,6 +7656,12 @@ ALTER TABLE `oc_filter_group_description`
  ADD PRIMARY KEY (`filter_group_id`,`language_id`);
 
 --
+-- Indexes for table `oc_ga_data`
+--
+ALTER TABLE `oc_ga_data`
+ ADD PRIMARY KEY (`ga_id`);
+
+--
 -- Indexes for table `oc_geo_zone`
 --
 ALTER TABLE `oc_geo_zone`
@@ -7764,6 +7768,12 @@ ALTER TABLE `oc_option_value_description`
 --
 ALTER TABLE `oc_order`
  ADD PRIMARY KEY (`order_id`);
+
+--
+-- Indexes for table `oc_order_cielo`
+--
+ALTER TABLE `oc_order_cielo`
+ ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `oc_order_download`
@@ -8097,7 +8107,7 @@ ALTER TABLE `oc_zone_to_geo_zone`
 -- AUTO_INCREMENT for table `oc_address`
 --
 ALTER TABLE `oc_address`
-MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `oc_affiliate`
 --
@@ -8132,7 +8142,7 @@ MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=408;
 -- AUTO_INCREMENT for table `oc_category`
 --
 ALTER TABLE `oc_category`
-MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=81;
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=98;
 --
 -- AUTO_INCREMENT for table `oc_country`
 --
@@ -8162,7 +8172,7 @@ MODIFY `currency_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 -- AUTO_INCREMENT for table `oc_customer`
 --
 ALTER TABLE `oc_customer`
-MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `oc_customer_ban_ip`
 --
@@ -8182,7 +8192,7 @@ MODIFY `customer_history_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
-MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `oc_customer_reward`
 --
@@ -8212,7 +8222,7 @@ MODIFY `download_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_extension`
 --
 ALTER TABLE `oc_extension`
-MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=502;
+MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=505;
 --
 -- AUTO_INCREMENT for table `oc_filter`
 --
@@ -8282,7 +8292,12 @@ MODIFY `option_value_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=49;
 -- AUTO_INCREMENT for table `oc_order`
 --
 ALTER TABLE `oc_order`
-MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
+MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+--
+-- AUTO_INCREMENT for table `oc_order_cielo`
+--
+ALTER TABLE `oc_order_cielo`
+MODIFY `id` int(15) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `oc_order_download`
 --
@@ -8292,17 +8307,17 @@ MODIFY `order_download_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
-MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `oc_order_option`
 --
 ALTER TABLE `oc_order_option`
-MODIFY `order_option_id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `order_option_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
-MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;
+MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `oc_order_recurring`
 --
@@ -8317,12 +8332,12 @@ MODIFY `order_recurring_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_order_status`
 --
 ALTER TABLE `oc_order_status`
-MODIFY `order_status_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+MODIFY `order_status_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=29;
 --
 -- AUTO_INCREMENT for table `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
-MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=66;
+MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=69;
 --
 -- AUTO_INCREMENT for table `oc_order_voucher`
 --
@@ -8402,7 +8417,7 @@ MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_setting`
 --
 ALTER TABLE `oc_setting`
-MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7689;
+MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7971;
 --
 -- AUTO_INCREMENT for table `oc_stock_status`
 --
@@ -8432,7 +8447,7 @@ MODIFY `tax_rule_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=129;
 -- AUTO_INCREMENT for table `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=815;
+MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=834;
 --
 -- AUTO_INCREMENT for table `oc_user`
 --

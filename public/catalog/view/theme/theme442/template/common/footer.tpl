@@ -5,6 +5,12 @@
 <div class="clear"></div>
 </section>
 <!-- Footer -->
+<div>
+	<div class="container">
+		<div class="fb-like-box" data-href="https://www.facebook.com/lojavirtual.digital" data-width="1200" data-height="258" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+	</div>
+</div>
+
 <footer>
 	<div class="container">
 		<div class="row">
@@ -68,7 +74,7 @@
 					</div>
 				</div>
 			</div>			
-			<div class="col-sm-3 copyright">
+			<div class="col-sm-3 copyright" style="width: 34%;">
 				<div class="block">					
 					<div class="block-content">
 					<div class="foot-phone">
