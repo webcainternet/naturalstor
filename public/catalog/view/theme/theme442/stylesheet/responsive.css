@@ -66,7 +66,7 @@
 		opacity:.85;
 	}
 	#cart .heading span.link_a:hover i.fa-angle-down {
-		color:#16300a;
+		color:#60bb44;
 	}
 	.box .box-product li .quick-view-button, 
 	.box .box-product li .image2 img, 
@@ -592,7 +592,7 @@
 	}
 	#column-right .box .box-heading, 
 	#column-left .box .box-heading, .tabs .tab-heading {
-		background: #16300a;
+		background: #60bb44;
 		border:none;
 		color:#fff;
 		font-size:17px;
@@ -751,7 +751,7 @@
 		border: none;
 	}
 	#search .button-search:hover {
-		background:#16300a;
+		background:#60bb44;
 		color:#fff;
 	}
 	/* Cart */

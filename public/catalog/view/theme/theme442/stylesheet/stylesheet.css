@@ -274,7 +274,7 @@ a{
 }
 a:hover {
 	text-decoration:none;
-	color:#16300a;
+	color:#60bb44;
 }
 a img {
 	border: none;
@@ -388,7 +388,7 @@ body.ind .swipe-left {
 .swipe-menu .box-currency .ul a:hover,
 .swipe-menu .box-currency .ul a span.act,
 #body .swipe .swipe-menu .box-currency .heading-1:hover i.fa.fa-angle-down {
-	color:#16300a;
+	color:#60bb44;
 }
 #body .swipe .swipe-menu .box-currency .heading {
 	display:none;
@@ -411,7 +411,7 @@ body.ind .swipe-left {
 	line-height:26px;
 	vertical-align:middle;
 	margin-top:0;
-	color:#16300a;
+	color:#60bb44;
 	padding-left:0;
 	margin-right:9px;
 }
@@ -446,7 +446,7 @@ body.ind .swipe-left {
 	padding:0
 }
 .swipe-menu .box-language .ul a:hover {
-	color:#16300a;
+	color:#60bb44;
 }
 .swipe-menu .box-language .ul a:first-child {
 	margin-left:30px;
@@ -459,7 +459,7 @@ body.ind .swipe-left {
 	color:#4d4d4d;
 }
 .swipe-menu .box-language .ul a.act {
-	color:#16300a
+	color:#60bb44
 }
 #body .swipe .swipe-menu .box-language .heading {
 	display:none;
@@ -481,7 +481,7 @@ body.ind .swipe-left {
 #body .swipe .swipe-menu .box-language .heading1:hover .fa-angle-down,
 #body .swipe .swipe-menu .box-currency .heading-1:hover,
 #body .swipe .swipe-menu .box-currency .heading-1:hover .fa-angle-down{	
-	color:#16300a;
+	color:#60bb44;
 }
 #body .swipe .swipe-menu .box-language .heading1 i {
 	display:inline-block;
@@ -489,7 +489,7 @@ body.ind .swipe-left {
 	line-height:26px;
 	vertical-align:middle;
 	margin-top:0;
-	color:#16300a;
+	color:#60bb44;
 	text-align:center;
 	margin-right:9px;
 }
@@ -503,13 +503,13 @@ body div.shadow {
 	display:none;
 }
 #body .swipe .swipe-menu li a:hover, #body .swipe .swipe-menu .box-language .heading1:hover i.fa.fa-angle-down {
-	color:#16300a
+	color:#60bb44
 }
 #body .swipe .swipe-menu li a {
 	color:#7E7E7E
 }
 #body .swipe .swipe-menu li a i {
-	color:#16300a;
+	color:#60bb44;
 	font-size:26px;
 	margin-right:9px;
 	vertical-align:middle;
@@ -544,7 +544,7 @@ body div.shadow {
 	text-decoration: inherit;
 	text-align: center;
 	font-size:26px;
-	color:#16300a;
+	color:#60bb44;
 	margin-right:9px;
 }
 #body .swipe .swipe-menu .foot li+li a:before {
@@ -595,7 +595,7 @@ body div.shadow {
 	color:#79ec3e;
 }
 #back-top span {
-	background: #16300a;
+	background: #60bb44;
     display: block;
     height: 44px;
     width: 44px;
@@ -638,7 +638,7 @@ header .toprow-1 {
 }
 /* header links */
 .nav__primary .links{
-	background:#16300a;
+	background:#60bb44;
 	width:100%;
 	margin-bottom:31px;
 }
@@ -681,7 +681,7 @@ header .links li a i {
 	color:#333;
 }
 .toprow  .links a.active, .toprow  .links a:hover {	
-	color:#16300a;
+	color:#60bb44;
 }
 .toprow .links .login_h a {
 	max-width:104px;
@@ -726,7 +726,7 @@ header .links li a i {
 .toprow .header-button>div:hover i,
 .toprow .header-button.active>div, 
 .toprow .header-button>div:hover{
-	color:#16300a;
+	color:#60bb44;
 }
 
 .toprow .header-button>div {
@@ -757,7 +757,7 @@ header .links li a i {
 	color:#979797;
 }
 .toprow .header-button .ul a:hover{
-	color:#16300a;
+	color:#60bb44;
 }
 .toprow .header-button .ul a span {
 	padding:5px 0;
@@ -780,7 +780,7 @@ header .checkout-button {
 	line-height:16px;
 	color:#fff;
 	padding:13px 18px 15px;
-	background:#16300a;
+	background:#60bb44;
 	margin:45px 0 23px 28px;
 }
 header .checkout-button:hover {
@@ -854,7 +854,7 @@ header #logo {
 #cart .heading span.link_a strong, #cart .heading span.link_a b {
 	font-weight:normal;
 	font-size:19px;
-	color:#16300a;
+	color:#60bb44;
 	float:left;
 }
 #cart .heading span.link_a {
@@ -916,12 +916,12 @@ header #cart .cart td.name a {
 	display:inline-block;
 }
 header #cart .cart td.name a:hover {
-	color:#16300a;
+	color:#60bb44;
 }
 header #cart .cart td .total {
 	font-size:13px;
 	font-weight:normal;
-	color:#16300a;
+	color:#60bb44;
 }
 header #cart .cart .item-cart-1 td {
 	padding-top:0;
@@ -969,7 +969,7 @@ header #cart .cart td.total {
 	float:left;
 }
 .remove span:hover i {
-	color:#16300a
+	color:#60bb44
 }
 .cart-module .cart .remove span {
 	width:11px;
@@ -990,7 +990,7 @@ header #cart .cart .remove i:hover {
 }
 header #cart .cart .remove i {
 	font-size:17px;
-	color:#16300a;
+	color:#60bb44;
 	line-height:20px;
 }
 header #cart .cart .remove:hover i {
@@ -1005,7 +1005,7 @@ header #cart .cart .remove {
 	right:0;
 }
 header #cart .cart .remove>span:hover {
-	color:#16300a;
+	color:#60bb44;
 }
 header #cart .cart .remove>span{
 	font-size:15px;
@@ -1031,7 +1031,7 @@ header #cart table.total td b {
 	font-weight:normal;
 }
 header #cart table.total td {
-	color: #16300a;
+	color: #60bb44;
 	font-size:13px;
 	padding-left:5px;
 	padding-right:10px;
@@ -1069,7 +1069,7 @@ header #cart .checkout a.button span{
 	padding:0;
 }
 header #cart .checkout a.button:hover span, header #cart .checkout a.button:hover i{
-	color:#16300a;
+	color:#60bb44;
 }
 header #cart .checkout a.button i{
 	font-size:26px;
@@ -1202,7 +1202,7 @@ header #cart .empty {
 	color:#000;
 }
 .name a:hover {
-	color:#16300a;
+	color:#60bb44;
 }
 /*======================= PRICE STYLE =======================*/
 .price.price-min {
@@ -1212,7 +1212,7 @@ header #cart .empty {
 	font-size:19px;
 	line-height:23px;
 	font-weight:normal;
-	color:#16300a;
+	color:#60bb44;
 }
 .price .price-new {
 	margin-right:4px;
@@ -1240,7 +1240,7 @@ header #cart .empty {
 .box .box-heading , .tabs .tab-heading{
 	font-size: 24px;
 	line-height: 28px;
-	color:#16300a;
+	color:#60bb44;
 	font-weight:normal;
 	padding-bottom:9px;
 	border-bottom:1px solid #dadada;
@@ -1287,7 +1287,7 @@ aside .box .box-heading {
 	margin-bottom:23px;
 }
 .box .box-content .box-product ul li .quick-view-button:hover {
-	color:#16300a
+	color:#60bb44
 }
 .box .box-content .box-product ul li .quick-view-button i {
 	width:30px
@@ -1489,7 +1489,7 @@ aside .box .box-content .box-product ul>li {
 	overflow:hidden;
 }
 .box-product.box-subcat .name.subcatname a:hover {
-	color:#16300a;
+	color:#60bb44;
 }
 .box-product.box-subcat .name.subcatname a {
 	margin-bottom:0;
@@ -1505,7 +1505,7 @@ aside .box .box-content .box-product ul>li {
 }
 li.parent> i:hover {
 	cursor:pointer;
-	color:#16300a;
+	color:#60bb44;
 }
 li.parent> i {
 	position:relative;
@@ -1541,7 +1541,7 @@ aside .box.category .box-content {
 }
 .box-category > ul > li.active>a, 
 .box-category > ul > li>a:hover {
-	color:#16300a;
+	color:#429320;
 }
 .box-category > ul > li:first-child {
 	border:0;
@@ -1572,7 +1572,7 @@ aside .box.category .box-content {
 .box-category > ul > li ul > li  a:hover,
 .box-category > ul > li ul > li  a.active,
 .box-category > ul > li ul > li.active > a{
-	color: #16300a;
+	color: #60bb44;
 }
 .box-category > ul > li ul > li {
 	padding:7px 0 8px;
@@ -1611,7 +1611,7 @@ aside .box.category .box-content {
 	padding-left:5px;
 }
 .box-filter label:hover {
-	color:#16300a;
+	color:#60bb44;
 }
 .box-filter .box-content .button {
 	margin-top:10px
@@ -1651,7 +1651,7 @@ aside .box.category .box-content {
 }
 .compare-block .remove a{
 	font-size:19px;
-	color:#16300a;
+	color:#60bb44;
 	line-height:normal;
 }
 .compare-info {
@@ -1687,7 +1687,7 @@ aside .info li a + a, .afine li a + a, .acount li a + a {
 	background:none;
 }
 aside .info li a:hover, .afine li a:hover, .acount li a:hover, .content ul li a:hover, .sitemap-info ul li a:hover, .manufacturer-list ul li a:hover {
-	color:#16300a;
+	color:#60bb44;
 }
 /*======================= BANNERS =======================*/
 .banner {
@@ -1724,7 +1724,7 @@ aside .info li a:hover, .afine li a:hover, .acount li a:hover, .content ul li a:
 	margin-bottom:0;
 }
 .banner h1 span {
-	color:#16300a;
+	color:#60bb44;
 	font-weight:normal;
 	font-size:34px;
 }
@@ -1741,7 +1741,7 @@ aside .info li a:hover, .afine li a:hover, .acount li a:hover, .content ul li a:
 	text-decoration:underline;
 }
 .banner a:hover .s-desc >span {	
-	color:#16300a;
+	color:#60bb44;
 }
 aside .banner > div.col-sm-4{
 	width:100%;
@@ -1787,7 +1787,7 @@ a.button, a.button-prod {
 	cursor: pointer;
 	font-size:14px;
 	line-height:16px;
-	background:#16300a;
+	background:#60bb44;
 }
 a.button span, a.button-prod span {
 	color: #fff;
@@ -1807,7 +1807,7 @@ a.button-i {
 }
 a.button-i i {
 	font-size:26px;
-	color:#16300a
+	color:#60bb44
 }
 a.button-i i:hover {
 	color:#7E7E7E
@@ -1842,7 +1842,7 @@ a.button-i i:hover {
 }
 .button-return-right-i:hover,
 .button-return-right:hover {
-	color:#16300a;
+	color:#60bb44;
 	cursor:pointer;
 }
 .button-return-right{
@@ -1886,7 +1886,7 @@ a.button-back-left:hover i,
 a.button-inf-left:hover i,
 #return-product .button-return-right-i:hover input,
 #return-product .button-return-right-i:hover i {
-	color:#16300a;
+	color:#60bb44;
 }
 a.button-return-left, 
 a.button-return-right, 
@@ -1959,7 +1959,7 @@ a:hover i.fa.fa-trash-o-o {
 	color:#000;
 }
 a i.fa.fa-trash-o-o {
-	color:#16300a;
+	color:#60bb44;
 }
 i.fa.fa-trash-o-o {
 	font-size:26px;
@@ -1974,7 +1974,7 @@ i.fa.fa-trash-o-o {
 	padding: 5px 12px;
 	text-decoration: none;
 	color:#fff;
-	background:#16300a;
+	background:#60bb44;
 }
 .pagination .links a:hover {
 	color:#fff;
@@ -2050,7 +2050,7 @@ i.fa.fa-trash-o-o {
 .link-login {
 	text-decoration:underline;
 	display:inline-block;
-	color:#16300a;
+	color:#60bb44;
 	font-style:italic;
 	margin-left:15px;
 	margin-top:3px;
@@ -2171,7 +2171,7 @@ table.list .center {
 	margin-bottom:25px;
 }
 .checkout-heading {
-	background: #16300a;	
+	background: #60bb44;	
 	color:#fff;
 	font-weight:normal;
 	padding:15px 100px 15px 15px;
@@ -2211,7 +2211,7 @@ table.list .center {
 	text-decoration:underline;
 }
 .checkout-content label a {
-	color:#16300a;
+	color:#60bb44;
 }
 /*======================= RETURN PAGE =======================*/
 .return-box-2 {
@@ -2342,7 +2342,7 @@ table.list .center {
 	margin-top:5px;
 }
 a.input-update i{
-	color: #16300a;
+	color: #60bb44;
 	font-size:26px;
 }
 a.input-update:hover i{
@@ -2369,7 +2369,7 @@ table#total  td {
 }
 table#total  td+td {
 	background-color:#fff;
-	color:#16300a;
+	color:#60bb44;
 	text-align:left;
 	font-size:15px;
 	font-weight:normal;
@@ -2494,12 +2494,12 @@ table.radio tbody td {
 	text-align: center;
 	font-size:15px;
 	line-height:18px;
-	color:#16300a;
+	color:#60bb44;
 	font-weight:normal;
 }
 .wishlist-product .table .price b{
 	font-weight:normal;
-	color:#16300a;
+	color:#60bb44;
 }
 .table thead td {
 	font-size:12px !important;
@@ -2539,7 +2539,7 @@ input#sub_category {
 	font-weight:bold;
 	font-size:13px;
 	text-transform:uppercase;
-	 background-color: #16300a;
+	 background-color: #60bb44;
 	color: #FFFFFF;
 	display: inline-block;
 	font-style: normal;
@@ -2552,7 +2552,7 @@ input#sub_category {
 .compare-info td.name a {
 	text-decoration:none;
 	font-size:12px;
-	color:#16300a
+	color:#60bb44
 }
 .compare-info td.last {
 	border-right:0;
@@ -2588,7 +2588,7 @@ input#sub_category {
 	font-weight: bold;
 	font-size:17px;
 	line-height:normal;
-	color:#16300a
+	color:#60bb44
 }
 /*======================= IMAGES PRODUCT =======================*/
 .image2 {
@@ -2664,7 +2664,7 @@ input#sub_category {
 	color:#000;
 }
 .manuf-p  a:hover{
-	color:#16300a;
+	color:#60bb44;
 }
 /*======================= PRODUCT PAGE =======================*/
 .total-right {
@@ -2714,7 +2714,7 @@ input#sub_category {
 }
 .prod-stock {
 	font-style:italic;
-	color:#16300a;
+	color:#60bb44;
 	font-size:15px;
 }
 .content ul {
@@ -2872,7 +2872,7 @@ h1.style-1 {
 }
 #list_b, #list_a:hover,
 #grid_b, #grid_a:hover {
-	color:#16300a;
+	color:#60bb44;
 }
 .product-filter .display {
 	position:relative;
@@ -2966,7 +2966,7 @@ h1.style-1 {
 }
 #full_gallery .prev:hover,
 #full_gallery .next:hover {
-	color:#16300a
+	color:#60bb44
 }
 #full_gallery .prev, #full_gallery .next {
 	color:#7e7e7e;
@@ -3033,7 +3033,7 @@ h1.style-1 {
 }
 .image-additional .next:hover,
 .image-additional .prev:hover  {
-	color:#16300a
+	color:#60bb44
 }
 .image-additional .prev  {
 	position:absolute;
@@ -3069,7 +3069,7 @@ h1.style-1 {
 	font-weight:normal;
 }
 .product-info .description .product-section a:hover{
-	color:#16300a;
+	color:#60bb44;
 }
 .product-info .description .product-section span {
 	color:#555;
@@ -3077,7 +3077,7 @@ h1.style-1 {
 }
 .product-info .description .product-section .prod-stock{
 	display:inline-block;
-	background-color:#16300a;
+	background-color:#60bb44;
 	color:#fff;
 	font-style:normal;
 	padding:0 7px;
@@ -3096,7 +3096,7 @@ h1.style-1 {
 	font-weight:normal;
 }
 .product-info .price .price-new{
-	color:#16300a;
+	color:#60bb44;
 	font-size:30px;
 }
 .product-info .price .price-old{
@@ -3198,7 +3198,7 @@ img#captcha {
     margin-bottom:10px;
 }
 .product-info .review a:hover {
-	color:#16300a;
+	color:#60bb44;
 }
 .product-info .review a{
 	color:#000;
@@ -3303,7 +3303,7 @@ td.image {
 }
 .related .prev:hover,
 .related .next:hover {
-	color:#16300a
+	color:#60bb44
 }
 .related .prev, 
 .related .next {
@@ -3382,12 +3382,12 @@ footer .block-content li a{
 	color:#777;
 }
 footer .block-content li a:hover{
-	color:#16300a;
+	color:#60bb44;
 }
 .foot-phone {
 	font-size:27px;
 	line-height:20px;
-	color:#16300a;
+	color:#60bb44;
 	font-weight:normal;
 	margin-bottom:12px;
 }
@@ -3508,7 +3508,7 @@ span.toggle {
 }
 .success a:hover {
 	text-decoration:none;
-	color:#16300a
+	color:#60bb44
 }
 .success a {
 	text-decoration:none;
@@ -3524,7 +3524,7 @@ span.toggle {
 }
 .success span:hover {
 	cursor:pointer;
-	color:#16300a
+	color:#60bb44
 }
 .success span {
 	overflow:hidden;
@@ -3534,7 +3534,7 @@ span.toggle {
 	opacity:1
 }
 .success i {
-	color:#16300a;
+	color:#60bb44;
 }
 .success i:hover {
 	color:#393939;
@@ -3550,7 +3550,7 @@ span.toggle {
 	text-shadow:none
 }
 .success a {
-	color:#16300a;
+	color:#60bb44;
 }
 .success a:hover {
 	text-decoration:underline;
@@ -3594,7 +3594,7 @@ span.toggle {
 }
 /*======================= BREADCRUMB =======================*/
 .breadcrumb a:hover, .breadcrumb a.last{
-	color:#16300a;	
+	color:#60bb44;	
 }
 .breadcrumb {
 	color:#000;
@@ -3617,7 +3617,7 @@ span.toggle {
 .wishlist a, .compare a{
 	display:block;
 	color:#fff;
-	background:#16300a;
+	background:#60bb44;
 	width:44px;
 	height:44px;
 	line-height:44px;
