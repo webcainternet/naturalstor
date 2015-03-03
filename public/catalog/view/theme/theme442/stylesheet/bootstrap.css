@@ -926,6 +926,7 @@ pre code {
   }
   .col-sm-12 {
     width: 100%;
+    text-align: right;
   }
   .col-sm-11 {
     width: 91.66666666666666%;
