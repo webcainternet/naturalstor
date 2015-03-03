@@ -7,7 +7,7 @@
 <!-- Footer -->
 <div>
 	<div class="container">
-		<div class="fb-like-box" data-href="https://www.facebook.com/lojavirtual.digital" data-width="1200" data-height="258" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+		<div class="fb-like-box" data-href="https://www.facebook.com/natural.store.limeira" data-width="1200" data-height="258" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 	</div>
 </div>
 
