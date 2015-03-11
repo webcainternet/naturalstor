@@ -30,7 +30,8 @@
 			</div>
 			<div class="map-content col-sm-6">         
 				<figure>
-				<iframe width="100%" height="200px" src="https://www.google.com/maps/embed/v1/place?q=Rua%20Carlos%20Gomes%2C%20857%2C%20Centro%2C%20Limeira%20-%20State%20of%20S%C3%A3o%20Paulo%2C%20Brazil&key=AIzaSyD4iE2xVSpkLLOXoyqT-RuPwURN3ddScAI"></iframe>
+				<iframe width="100%" height="200px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3684.3145548768807!2d-47.404872100000006!3d-22.5673357!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c880f3f8c90ee5%3A0x3a77f5f888959e9d!2sR.+Carlos+Gomes%2C+857+-+Centro%2C+Limeira+-+SP%2C+13480-011!5e0!3m2!1spt-BR!2sbr!4v1426036434346"></iframe>
+
 
 				</figure>
 			</div>
