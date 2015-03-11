@@ -30,7 +30,8 @@
 			</div>
 			<div class="map-content col-sm-6">         
 				<figure>
-				<iframe width="100%" height="200px"  src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+				<iframe width="100%" height="200px" src="https://www.google.com/maps/embed/v1/place?q=Rua%20Carlos%20Gomes%2C%20857%2C%20Centro%2C%20Limeira%20-%20State%20of%20S%C3%A3o%20Paulo%2C%20Brazil&key=AIzaSyD4iE2xVSpkLLOXoyqT-RuPwURN3ddScAI"></iframe>
+
 				</figure>
 			</div>
 		</div>
