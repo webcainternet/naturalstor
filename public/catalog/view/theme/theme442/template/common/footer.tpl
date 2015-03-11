@@ -83,8 +83,8 @@
 					</div>
 					<ul class="social">						
 						<li><a class="tooltip-2" title="<?php echo $text_fb; ?>" href="http://facebook.com/natural.store.limeira" target="_blank"><i class="fa fa-facebook"></i></a></li>
-						<li><a class="tooltip-2" title="<?php echo $text_twi; ?>" href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-						<li><a class="tooltip-2" title="<?php echo $text_rss; ?>" href="#"><i class="fa fa-rss"></i></a></li>
+						<li><a class="tooltip-2" title="<?php echo $text_twi; ?>" href="https://instagram.com/natural_store_limeira/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+
 					</ul>
 					<!-- copyright -->
 					<div id="copyright">
