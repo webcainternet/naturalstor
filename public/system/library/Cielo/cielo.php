@@ -392,7 +392,8 @@ class Cielo	{
 		//  informa a localização do certificado para verificação com o peer
 		curl_setopt($sessao_curl, CURLOPT_CAINFO, DIR_SYSTEM .
 			'library/Cielo/ssl/VeriSignClass3PublicPrimaryCertificationAuthority-G5.crt');
-		curl_setopt($sessao_curl, CURLOPT_SSLVERSION, 3);
+		//curl_setopt($sessao_curl, CURLOPT_SSLVERSION, 3);
+		curl_setopt($sessao_curl, CURLOPT_SSLVERSION, 4);
 		
 		//  CURLOPT_CONNECTTIMEOUT
 		//  o tempo em segundos de espera para obter uma conexão
