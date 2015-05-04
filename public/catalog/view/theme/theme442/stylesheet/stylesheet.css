@@ -1303,6 +1303,7 @@ aside .box .box-heading {
 	width:30px;
 	text-align:center;
 	color:#e2e2e2;
+	display: none;
 }
 .box .box-content .box-product ul li:hover .quick-view-button {
 	opacity:1;
