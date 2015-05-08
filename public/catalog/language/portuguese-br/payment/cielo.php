@@ -28,7 +28,7 @@
  */
 
 // Model
-$_['text_title'] = 'Cartões de crédito/débito';
+$_['text_title'] = 'Cielo';
 $_['text_total_cielo_desc'] = 'Desconto';
 $_['text_total_cielo_juros'] = 'Juros';
 
