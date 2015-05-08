@@ -42,7 +42,7 @@ class ModelPaymentCielo extends Model {
 			elseif($operacao['ativo']) $codigo_cartoes[] = $operacao['codigo'];
 		}
 		
-		$msg_texto = $this->language->get('text_title') . ' (' . implode(', ', $cartoes) . ')';
+		$msg_texto = $this->language->get('text_title') . ' ' . implode(', ', $cartoes) . '';
 
 		$imgs = '';
 
@@ -50,7 +50,7 @@ class ModelPaymentCielo extends Model {
 			$imgs .= '<img style="vertical-align:middle;margin:0px 5px 0px 5px;" src="image/cielo/' . $codigo_cartao . '.png" />';
 		}
 
-		$msg_img = $this->language->get('text_title') . ' (' . $imgs . ')';
+		$msg_img = $this->language->get('text_title') . ' ' . $imgs . '';
 
 		$msg = $cielo_config['exibicao_checkout'] == 'img' ? $msg_img : $msg_texto;
 
